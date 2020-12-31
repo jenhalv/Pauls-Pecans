@@ -1,22 +1,27 @@
 <div class="card-container">
 
-    <span class="card-header">What We Do</span>
-
-  <div class="card">
-    <img mat-card-image class="card-image" src="assets/Images/tree1.jpg" alt="pecans on a tree">
-    <img mat-card-image class="card-image" src="assets/Images/tree.jpg" alt="pecans on a tree">
-    <img mat-card-image class="card-image" src="assets/Images/pecans1.jpg" alt="pecans">
-        Our family has been producing organic pecans for 46 years on our beautiful farm.
+  <div class="container-header">
+    <div class="container-line"><mat-divider></mat-divider></div>
+    <div class="container-text">What We Do</div>
+    <div class="container-line"><mat-divider></mat-divider></div>
   </div>
 
-  <div class="card">
-    <img mat-card-image class="card-image" src="assets/Images/Pop.jpg" alt="Pop & Ally">
-    <img mat-card-image class="card-image" src="assets/Images/grove1.jpg" alt="Pecan Grove">
-        "A society grows great when old men plant trees whose shade they know they shall never sit in." <br>~ Greek Proverb
-  </div>
+  <mat-card class="project-card" *ngFor="let card of CARDS">
 
-      <div class="card">
-        <img class="card-image" src="assets/Images/bags.jpg" alt="baggies of pecans">We have different sizes of boxes available for various appetites, from individuals to families.
-      </div>
+    <img mat-card-image [src]="card.image" [alt]="card.imageAlt" />
+
+    <mat-card-header class="project-header">
+      <mat-card-title class="project-title">{{card.title}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content class="project-content">{{card.content}}
+    </mat-card-content>
+
+
+    <mat-card-actions align="end">
+      <button mat-button class="read-more" (click)="this.card.collapsed = !this.card.collapsed">Learn More</button>
+    </mat-card-actions>
+
+  </mat-card>
 
 </div>

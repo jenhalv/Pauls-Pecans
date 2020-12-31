@@ -1,0 +1,30 @@
+.card-container {
+  font-size: 18px;
+  color: #000000;
+  width: auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1500px;
+  font-family: 'Montserrat', sans-serif;
+}
+.recipe-header {
+  width: 100%;
+  max-width: 986px;
+  color: black;
+  line-height: 40px;
+  font-size: 40px;
+  background-color: #204638;
+  display: flex;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  flex-wrap: wrap;
+}

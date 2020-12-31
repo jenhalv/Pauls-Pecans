@@ -4,6 +4,7 @@
   overflow: hidden;
   margin-top: 20px;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
   }
 
 .pecan-logo {
@@ -20,4 +21,26 @@
   text-align: center;
   padding: 5px;
   display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.image-container .btn {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.image-container .btn:hover {
+  background-color: black;
 }
