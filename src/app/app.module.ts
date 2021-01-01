@@ -27,6 +27,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { AboutComponent } from './info/about/about.component';
 import { ProductComponent } from './info/product/product.component';
 import { TraditionComponent } from './info/tradition/tradition.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -54,7 +55,8 @@ const ANGULAR_MATERIAL_MODULES = [
     RecipesComponent,
     AboutComponent,
     ProductComponent,
-    TraditionComponent
+    TraditionComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,

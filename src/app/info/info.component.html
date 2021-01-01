@@ -10,7 +10,7 @@
 </div>
 
 <div class="card-container">
-  <mat-card class="project-card" *ngFor="let card of CARDS" let i = index>
+  <mat-card class="project-card" *ngFor="let card of CARDS">
 
     <img mat-card-image [src]="card.image" [alt]="card.imageAlt" />
 
@@ -21,12 +21,10 @@
     <mat-card-content class="project-content">{{card.content}}
     </mat-card-content>
 
-
     <mat-card-actions align="end">
-      <button mat-button class="read-more"  >Learn More</button>
+      <button mat-button class="learn-more">Learn More</button>
     </mat-card-actions>
 
   </mat-card>
 
 </div>
-<!-- (click)="selectLearnMore($event)" -->

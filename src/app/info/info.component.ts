@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
+  selected: any;
 
   CARDS = [
     {
@@ -29,6 +30,7 @@ export class InfoComponent implements OnInit {
       image: 'assets/Images/flower.jpg',
       imageAlt: 'pecan flower',
       content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
+      routerLink: '/tradition',
     }
 ];
 
@@ -38,6 +40,11 @@ export class InfoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // tslint:disable-next-line:typedef
+  select(card) {
+    this.selected = card;
+}
 
   // selectLearnMore(id: string): void {
   //   this.router.navigate(['info', id]);

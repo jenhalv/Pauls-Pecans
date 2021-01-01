@@ -111,12 +111,13 @@ a:visited {
   font-family: 'Montserrat', sans-serif;
 }
 
-.read-more {
+.learn-more {
     color: white;
     cursor: pointer;
     background-color: black;
     font-family: 'Montserrat', sans-serif;
     line-height: 25px;
+    align-content: flex-end;
 }
 
 .mat-action-row {
