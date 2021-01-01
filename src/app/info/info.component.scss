@@ -13,30 +13,47 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-// WHAT WE DO
+// GRANDPA QUOTE
 .container-header {
   width: 100%;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 20px;
 }
 
 .container-line {
   flex: 1;
 }
 
-.container-text {
+.container-title {
   color: #204638;
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 25px;
   font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
   font-family: 'Montserrat', sans-serif;
+}
+
+.quote-card {
+  width: 50%;
+  // max-width: 986px;
+  display: flex;
+  box-shadow: none;
+  border: transparent;
+  background: transparent;
+  border-radius: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 0px;
+  font-size: 15px;
+  color: #204638;
+  margin: auto;
+  justify-content: flex-end;
+  padding-right: 6px;
+  flex-wrap: wrap;
 }
 
 // INDIVIDUAL INFO CARDS
@@ -44,7 +61,7 @@
   max-width: 280px;
   padding-top: 0px;
   margin: 15px;
-  margin-top: 5px;
+  margin-top: 25px;
   margin-bottom: 30px;
   border: transparent;
   border-radius: 0px;
@@ -118,5 +135,16 @@ padding: 0px;
 @media only screen and (max-width: 290px) {
   .project-card {
     max-width: 200px;
+  }
+}
+@media only screen and (max-width: 590px) {
+  .quote-card {
+    justify-content: center;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .narrow1 {
+    display: block
   }
 }

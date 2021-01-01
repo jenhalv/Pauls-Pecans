@@ -2,5 +2,20 @@
 
 
 <span class="recipe-header">Our Favorite Recipes</span>
+<div class="card-container">
+  <mat-card class="project-card" *ngFor="let card of CARDS">
+
+      <!-- <img mat-card-image [src]="card.image" [alt]="card.imageAlt" /> -->
+
+  <mat-card-title class="recipe-title">{{card.title}}</mat-card-title>
+
+  <mat-card-subtitle class="recipe-subtitle">Ingredients:</mat-card-subtitle>
+    <mat-card-content [innerHTML]="card.ingredients">{{card.ingredients}}</mat-card-content>
+
+  <mat-card-subtitle class="recipe-subtitle">Directions:</mat-card-subtitle>
+    <mat-card-content [innerHTML]="card.directions">{{card.directions}}</mat-card-content>
+
+  </mat-card>
+</div>
 
 </div>

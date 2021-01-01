@@ -24,6 +24,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
+import { AboutComponent } from './info/about/about.component';
+import { ProductComponent } from './info/product/product.component';
+import { TraditionComponent } from './info/tradition/tradition.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -48,7 +51,10 @@ const ANGULAR_MATERIAL_MODULES = [
     PecansComponent,
     FamilyComponent,
     SellingComponent,
-    RecipesComponent
+    RecipesComponent,
+    AboutComponent,
+    ProductComponent,
+    TraditionComponent
   ],
   imports: [
     BrowserModule,
