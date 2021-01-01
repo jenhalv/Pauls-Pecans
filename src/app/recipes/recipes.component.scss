@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-color: #204638;
+  background-color: #58504e;
 }
 .recipe-header {
   width: 100%;
@@ -31,7 +31,8 @@
   margin-bottom: 20px;
   background-color: #ece4df;
   font-family: 'Montserrat', sans-serif;
-  border: 6px #9abda7 solid;
+  border: 6px #c7af93 solid;
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
 }
 
 .card-image {
