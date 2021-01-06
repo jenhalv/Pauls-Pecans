@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { TraditionComponent } from './info/tradition/tradition.component';
 import { ProductComponent } from './info/product/product.component';
-import { AboutComponent } from './info/about/about.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 
 const routes: Routes = [
   {
-    path: 'about',
-    component: AboutComponent
+    path: 'about-pecans',
+    component: AboutPecansComponent
   },
   {
     path: 'product',

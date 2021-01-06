@@ -1,0 +1,31 @@
+mat-toolbar {
+  max-height: 55px;
+  width: 100%;
+  background-color: #49544c;
+  align-items: center;
+  justify-content: left;
+  left: 5;
+  top: 0;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.welcome {
+  font-size: x-large;
+  color: #dfe3e4;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  height: 30px;
+  margin: 0px;
+  filter: invert(96%) sepia(3%) saturate(175%) hue-rotate(145deg) brightness(92%) contrast(100%);
+}

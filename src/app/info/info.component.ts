@@ -7,32 +7,31 @@ import { Router } from '@angular/router';
   styleUrls: ['./info.component.scss']
 })
 export class InfoComponent implements OnInit {
-  selected: any;
 
   CARDS = [
     {
-      id: 'about',
       title: 'About',
       image: 'assets/Images/tassels.jpg',
-      imageAlt: 'tassels on a tree',
-      content: 'Our family has been growing & grafting organic pecan trees for 46 years in southwestern Missouri.'
+      imageAlt: 'pecan tassels on a tree',
+      content: 'Our family has been growing & grafting organic pecan trees for 46 years in southwestern Missouri.',
+      path: 'about-pecans',
     },
     {
-      id: 'product',
       title: 'Product',
       image: 'assets/Images/tree.jpg',
-      imageAlt: 'pecans',
+      imageAlt: 'pecans in husk',
       content: 'We produce quality organic fresh raw pecans grown on our responsibly-farmed orchard.',
+      path: 'product',
     },
     {
-      id: 'tradition',
       title: 'Tradition',
       image: 'assets/Images/flower.jpg',
       imageAlt: 'pecan flower',
       content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
-      routerLink: '/tradition',
+      path: 'tradition',
     }
 ];
+
 
   constructor(
     private router: Router,
@@ -41,12 +40,8 @@ export class InfoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // tslint:disable-next-line:typedef
-  select(card) {
-    this.selected = card;
-}
-
-  // selectLearnMore(id: string): void {
-  //   this.router.navigate(['info', id]);
-  // }
+  // info(card: any): void{
+  //   this.router.navigate(['info', card.path]);
+  //   console.log('what happens', card.title);
+  //   }
 }

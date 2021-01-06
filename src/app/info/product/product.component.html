@@ -1,1 +1,103 @@
-<p>product works!</p>
+<app-toolbar></app-toolbar>
+<div class="product-page">
+
+<!-- <div class="product-header">
+      <img class="product-image" src="assets/Images/pecans1.jpg"/>
+
+  <h1 class="product-text">These tasty nuts can be used in desserts, salads, breads and more, but don’t forget to enjoy a handful of raw pecans for a heart-healthy & delightful snack!</h1></div> -->
+
+  <div class="card-container">
+      <mat-card class="project-card">
+          <mat-card-title class="project-header">These tasty nuts can be used in desserts, salads, breads and more, but don’t forget to enjoy a handful of raw pecans for a heart-healthy & delightful snack!</mat-card-title>
+      </mat-card>
+
+      <mat-card class="project-card">
+          <mat-card-header class="project-header">
+
+          <img mat-card-image src="assets/Images/pecans1.jpg"/>
+        </mat-card-header>
+        </mat-card>
+
+    </div>
+
+<mat-grid-list cols = "4" rowHeight = "40px" gutterSize="5px" class="grid-title">
+
+  <mat-grid-tile
+  [colspan] = "4"
+  [rowspan] = "1">
+  <div class="container-line"><mat-divider></mat-divider></div>PRICING
+  <div class="container-line"><mat-divider></mat-divider></div>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list  cols = "4" rowHeight = "30px" gutterSize="5px" class="grid-subtitle">
+<mat-grid-tile
+  [colspan] = "1"
+  [rowspan] = "1">POUNDS
+  </mat-grid-tile>
+
+  <mat-grid-tile
+  [colspan] = "1"
+  [rowspan] = "1">PRICE
+  </mat-grid-tile>
+
+  <mat-grid-tile
+  [colspan] = "1"
+  [rowspan] = "1">S&H
+  </mat-grid-tile>
+
+  <mat-grid-tile
+  [colspan] = "1"
+  [rowspan] = "1">TOTAL
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list class="grid-text" cols = "4" rowHeight = "30px" gutterSize="5px" *ngFor="let price of PRICE">
+
+    <mat-grid-tile class="grid-text1"
+    [colspan] = "1"
+    [rowspan] = "1">{{price.pounds}}
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-text1"
+    [colspan] = "1"
+    [rowspan] = "1">{{price.price}}
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-text1"
+    [colspan] = "1"
+    [rowspan] = "1">{{price.shipping}}
+    </mat-grid-tile>
+
+    <mat-grid-tile  class="grid-text2"
+    [colspan] = "1"
+    [rowspan] = "1" >
+    {{price.total}}
+    </mat-grid-tile>
+
+    <mat-divider></mat-divider>
+</mat-grid-list>
+
+<mat-grid-list cols = "4" rowHeight = "20px" class="grid-smallprint">
+
+    <mat-grid-tile
+    [colspan] = "4"
+    [rowspan] = "1">
+    ** Pricing & availability is subject to change. **
+
+    </mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+<!-- <div class="card-container">
+    <div class="card">  <img class="card-image" src="assets/Images/bags.jpg" alt="baggies of pecans">We have different sizes of boxes available for various appetites, from individuals to families.
+
+      Storage Info
+Although pecans are often described as a semi-perishable product, proper storage techniques must be used to maintain good nut quality.  Pecans that won’t be consumed immediately will stay fresh well over a year if stored in a freezer.  Pecans can stay fresh for several days at room temperature in open bowls or for weeks if refrigerated.  Poor storage conditions often lead to darkening of the kernel and rancidity of the oils, thus destroying the delicious natural flavor and aroma of the nuts.
+
+These tasty nuts can be used in desserts, salads, breads and more, but don’t forget to enjoy a handful of raw pecans for a heart-healthy & delightful snack!
+
+The largest member of the hickory clan, pecan trees can grow to a height of over 100 feet tall.  My parents, Paul & Peggy Droz, have several trees on their property reaching these heights! The trees grow best in rich bottomland soils.  The Droz property in Rich Hill is adjacent to the Marais des Cygnes River and has an abundance of pecan, hickory, walnut, and other native Missouri trees.
+
+</div>
+</div> -->

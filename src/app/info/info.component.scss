@@ -1,16 +1,7 @@
 .card-container {
   font-size: 18px;
   color: #000000;
-  width: auto;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
-  flex-wrap: wrap;
-  width: 100%;
   max-width: 1500px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 // GRANDPA QUOTE
@@ -93,18 +84,6 @@ a:visited {
   font-family: 'Montserrat', sans-serif;
 }
 
-.mat-card-image:first-child {
-  margin-top: 0px;
-}
-
-:host ::ng-deep a:visited {
-  color: inherit;
-}
-
-.mat-card-image {
-  margin: 0 -16px;
-}
-
 .mat-card-content {
   margin-bottom: 0px;
   padding: 5px 0px;
@@ -132,6 +111,17 @@ padding: 0px;
   font-family: 'Montserrat', sans-serif;
 }
 
+.mat-card-image:first-child {
+  margin-top: 0px;
+}
+
+:host ::ng-deep a:visited {
+  color: inherit;
+}
+
+.mat-card-image {
+  margin: 0 -16px;
+}
 /* Responsive Styles */
 @media only screen and (max-width: 290px) {
   .project-card {

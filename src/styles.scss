@@ -10,6 +10,32 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.card-container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+  margin: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  border: transparent;
+  border-radius: 0px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.card-image {
+  width: 100%;
+}
+
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @import '~@angular/material/theming';

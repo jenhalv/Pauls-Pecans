@@ -1,0 +1,110 @@
+.product-page {
+  background-color: #cacecd;
+  padding-bottom: 40px;
+}
+.card-container {
+  max-width: 1600px;
+}
+
+.project-card {
+  font-size: 20px;
+  line-height: 22px;
+  max-width: 600px;
+  padding: 0px;
+  border: transparent;
+  border-radius: 0px;
+  display: flex;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 7px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-image {
+  max-width: 300px;
+  margin: 0px;
+}
+.product-text {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  width: 50%; //text is next to photo
+}
+
+.container-line {
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+mat-grid-tile {
+  background: #cacecd;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+.mat-list-base .mat-list-item {
+  height: 20px;
+  padding-top: 0px;
+ }
+
+ mat-grid-list {
+  display: flex;
+ }
+
+.grid-title {
+   font-weight: bold;
+   font-size: 18px;
+   border-top: 5px solid #49544c;
+   border-bottom: 3px solid #49544c;
+ }
+
+ .grid-subtitle {
+  font-weight: bold;
+  font-size: 15px;
+  border-bottom: 2px solid #49544c;
+}
+
+.grid-subtitle1 {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.grid-text {
+  border-bottom: 1px solid #49544c;
+}
+
+.grid-text1 {
+  font-size: 15px;
+}
+
+.grid-text2 {
+  font-size: 17px;
+}
+
+.grid-smallprint {
+  font-size: 12px;
+}

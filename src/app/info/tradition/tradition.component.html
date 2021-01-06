@@ -1,1 +1,17 @@
-<p>tradition works!</p>
+<app-toolbar></app-toolbar>
+<div class="card-container">
+  <div class="page">
+
+    <h2>Paul began grafting & growing pecan trees with his father in 1972.  Together they planted hundreds of trees from seed, as well as grafting native trees to produce more plump, meaty nuts.  He is now teaching his children and grandchildren the ins and outs of the pecan farming business.</h2>
+
+    <mat-card class="card" *ngFor="let card of CARDS">
+
+        <img mat-card-image class="card-image" [src]="card.image" [alt]="card.imageAlt" />
+
+        <mat-card-content class="caption">{{card.caption}}
+        </mat-card-content>
+
+      </mat-card>
+
+</div>
+</div>
