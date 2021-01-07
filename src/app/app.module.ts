@@ -27,6 +27,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 import { ToolbarComponent } from './info/toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -60,7 +61,7 @@ const ANGULAR_MATERIAL_MODULES = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule,
+    FlexLayoutModule,
     ANGULAR_MATERIAL_MODULES
   ],
   providers: [],

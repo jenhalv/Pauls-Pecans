@@ -29,3 +29,15 @@ img {
   margin: 0px;
   filter: invert(96%) sepia(3%) saturate(175%) hue-rotate(145deg) brightness(92%) contrast(100%);
 }
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.spacer1 {
+  flex: 12 1 auto;
+}

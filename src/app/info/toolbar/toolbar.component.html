@@ -4,7 +4,64 @@
       <img alt="Home Page"
         src="assets/Images/home.png"/>
 
-      <div class="welcome">Home Page</div>
+      <div class="welcome">Paul's Pecans</div>
 
     </a>
-  </mat-toolbar>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>home</mat-icon>
+        </button>
+
+        <span>Responsive Navigation</span> <span class="example-spacer"></span>
+        <a routerLink="/About" mat-button>About</a> <a href="#" mat-button>Product</a>
+        <a href="#" mat-button>Menu Item 3</a> <a href="#" mat-button>Menu Item 4</a>
+        <a href="#" mat-button>Menu Item 5</a> <a href="#" mat-button>Menu Item 6</a>
+
+
+      <!-- <span>My App</span> -->
+      <span class="spacer1"></span>
+      <button class="navigation" routerLink="/About">
+          <span>About</span>
+     </button>
+
+     <span class="example-spacer"></span>
+     <button mat-icon-button class="navigation" [routerLink]="['/Product']">
+      <span>Product</span>
+    </button>
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="navigation" [routerLink]="['/Tradition']">
+     <span>Tradition</span>
+   </button>
+
+
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+       <mat-icon>share</mat-icon>
+     </button>
+
+      </mat-toolbar>
+
+      <!-- <mat-menu x-position="before" #menu="matMenu">
+          <button mat-menu-item routerLink="/products">Products</button>
+          <button mat-menu-item routerLink="/dashboard">Dashboard</button>
+          <button mat-menu-item>Help</button>
+      </mat-menu> -->
+
+
+      <!-- <mat-sidenav-container fxFlexFill class="example-container">
+
+        <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+          <div fxLayout="column">
+            <a mat-button routerLink="/about-us">About us</a>
+            <a mat-button routerLink="/prices">Prices</a>
+            <a mat-button routerLink="/start-page">Start page</a>
+            <a mat-button routerLink="/offer">Offer</a>
+            <a mat-button routerLink="/contact">Contact</a>
+          </div>
+        </mat-sidenav>
+      </mat-sidenav-container> -->
+
