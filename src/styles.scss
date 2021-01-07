@@ -29,12 +29,20 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+}
 
 .card-image {
   width: 100%;
 }
 
+@media only screen and (max-width: 405px) {
+  .narrow {
+    display: block
+  }
+}
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming

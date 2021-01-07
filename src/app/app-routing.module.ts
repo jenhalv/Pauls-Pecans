@@ -5,6 +5,7 @@ import { TraditionComponent } from './info/tradition/tradition.component';
 import { ProductComponent } from './info/product/product.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
+import { ToolbarComponent } from '../../../../../Arvid_8_3_2020/ArvidManage/src/app/shared/app-layouts/shared/component/toolbar/toolbar.component';
 
 const routes: Routes = [
   {
@@ -22,7 +23,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomePageComponent
-  }
+  },
 ];
 
 @NgModule({

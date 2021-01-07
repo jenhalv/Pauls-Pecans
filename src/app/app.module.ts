@@ -26,6 +26,7 @@ import { TraditionComponent } from './info/tradition/tradition.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 import { ToolbarComponent } from './info/toolbar/toolbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -52,7 +53,8 @@ const ANGULAR_MATERIAL_MODULES = [
     TraditionComponent,
     HomePageComponent,
     AboutPecansComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

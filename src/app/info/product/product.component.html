@@ -1,58 +1,48 @@
-<app-toolbar></app-toolbar>
 <div class="product-page">
+  <div class="image-container">
 
-<!-- <div class="product-header">
-      <img class="product-image" src="assets/Images/pecans1.jpg"/>
+    <img mat-card-image class="pecan-logo" src="\assets\Images\pecans1.jpg"/>
+  </div>
 
-  <h1 class="product-text">These tasty nuts can be used in desserts, salads, breads and more, but don’t forget to enjoy a handful of raw pecans for a heart-healthy & delightful snack!</h1></div> -->
+  <div class="product-header">
+      <div class="container-line"><mat-divider></mat-divider></div>PRICING
+    <div class="container-line"><mat-divider></mat-divider></div>
 
-  <div class="card-container">
-      <mat-card class="project-card">
-          <mat-card-title class="project-header">These tasty nuts can be used in desserts, salads, breads and more, but don’t forget to enjoy a handful of raw pecans for a heart-healthy & delightful snack!</mat-card-title>
-      </mat-card>
+      <mat-card class="quote-card">** Pricing & availability subject to change. **</mat-card>
+     </div>
 
-      <mat-card class="project-card">
-          <mat-card-header class="project-header">
 
-          <img mat-card-image src="assets/Images/pecans1.jpg"/>
-        </mat-card-header>
-        </mat-card>
+<mat-grid-list cols = "4" rowHeight = "20px" class="grid-title">
 
-    </div>
-
-<mat-grid-list cols = "4" rowHeight = "40px" gutterSize="5px" class="grid-title">
-
-  <mat-grid-tile
+  <mat-grid-tile class="title"
   [colspan] = "4"
   [rowspan] = "1">
-  <div class="container-line"><mat-divider></mat-divider></div>PRICING
-  <div class="container-line"><mat-divider></mat-divider></div>
   </mat-grid-tile>
 </mat-grid-list>
 
-<mat-grid-list  cols = "4" rowHeight = "30px" gutterSize="5px" class="grid-subtitle">
-<mat-grid-tile
+<mat-grid-list class="grid-subtitle" cols = "4" rowHeight = "30px">
+<mat-grid-tile class="grid-subtitle1"
   [colspan] = "1"
   [rowspan] = "1">POUNDS
   </mat-grid-tile>
 
-  <mat-grid-tile
+  <mat-grid-tile class="grid-subtitle1"
   [colspan] = "1"
   [rowspan] = "1">PRICE
   </mat-grid-tile>
 
-  <mat-grid-tile
+  <mat-grid-tile class="grid-subtitle1"
   [colspan] = "1"
   [rowspan] = "1">S&H
   </mat-grid-tile>
 
-  <mat-grid-tile
+  <mat-grid-tile class="grid-subtitle2"
   [colspan] = "1"
   [rowspan] = "1">TOTAL
   </mat-grid-tile>
 </mat-grid-list>
 
-<mat-grid-list class="grid-text" cols = "4" rowHeight = "30px" gutterSize="5px" *ngFor="let price of PRICE">
+<mat-grid-list class="grid-text" cols = "4" rowHeight = "30px" *ngFor="let price of PRICE">
 
     <mat-grid-tile class="grid-text1"
     [colspan] = "1"
@@ -75,20 +65,57 @@
     {{price.total}}
     </mat-grid-tile>
 
-    <mat-divider></mat-divider>
 </mat-grid-list>
 
-<mat-grid-list cols = "4" rowHeight = "20px" class="grid-smallprint">
+<br>
 
-    <mat-grid-tile
-    [colspan] = "4"
-    [rowspan] = "1">
-    ** Pricing & availability is subject to change. **
+    <div class="small-title">Payment Options</div>
 
-    </mat-grid-tile>
+    <div class="payment-pics">
+
+    <mat-card class="payments">
+        <a href="https://www.paypal.com">
+        <img class="paypal-pic" src="/assets/Images/Paypal_Icon.png" alt="Email Jen"/></a>
+        <div class="text">Find me on PayPal<br>
+         jenhalv06@gmail.com</div>
+      </mat-card>
+
+      <mat-card class="payments">
+        <div class="text">Mail a check payable to:<br>
+            Jennifer Halvorson<br>
+            568 SW County Road 7508<br>
+            Rich Hill, MO 64779
+            </div>
+            <img class="mailbox-pic" src="/assets/Images/Mailbox_Icon.png" alt="Text Jen"/>
+    </mat-card>
+  </div>
+
+
+
+<!-- <div class="product-header">payment</div> -->
+<!--
+   <mat-grid-list class="grid-text" cols = "2" rowHeight = "30px" gutterSize="1px">
+
+      <mat-grid-tile class="grid-text2"
+      [colspan] = "1"
+      [rowspan] = "2">Payment Options
+      </mat-grid-tile>
+
+      <mat-grid-tile class="grid-text1"
+      [colspan] = "1"
+      [rowspan] = "1">22
+      </mat-grid-tile>
+
+      <mat-grid-tile class="grid-text1"
+      [colspan] = "1"
+      [rowspan] = "1">22
+      </mat-grid-tile>
+
   </mat-grid-list>
+</div> -->
 
-</div>
+
+
 <!-- <div class="card-container">
     <div class="card">  <img class="card-image" src="assets/Images/bags.jpg" alt="baggies of pecans">We have different sizes of boxes available for various appetites, from individuals to families.
 
