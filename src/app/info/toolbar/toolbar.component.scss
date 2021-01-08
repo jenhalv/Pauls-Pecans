@@ -1,43 +1,107 @@
 mat-toolbar {
   max-height: 55px;
   width: 100%;
-  background-color: #49544c;
+  background-color: #204638;
   align-items: center;
-  justify-content: left;
-  left: 5;
-  top: 0;
-  padding: 10px;
-  font-family: 'Montserrat', sans-serif;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  padding: 1px;
 }
 
 a {
-  display: flex;
-  align-items: center;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.welcome {
-  font-size: x-large;
+.header {
   color: #ece4df;
-  margin-left: 5px;
-  margin-top: 5px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin: 0px 5px 0px 0px;
 }
 
-img {
-  height: 30px;
-  margin: 0px;
-  filter: invert(96%) sepia(3%) saturate(175%) hue-rotate(145deg) brightness(92%) contrast(100%);
+// .menu-links{
+//   color: black;
+//   font-weight: bold;
+//   text-align: left;
+//   font-family: 'Montserrat', sans-serif;
+// }
+// .matMenu {
+//   padding: 0px;
+//   background: #ece4df;
+// }
+
+// .mat-hamburger-icon {
+//   background: #ece4df;
+// }
+
+// .mat-menu-item {
+//   background: #ece4df;
+//   line-height: 30px;
+//   height: 30px;
+// }
+
+.mat-icon {
+    padding: 0px;
 }
 
-button {
+.mat-menu-content:not(:empty) {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #ece4df;
+}
+
+mat-menu-content ng-tns-c83-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background: #ece4df;
+}
+.mat-menu-panel {
+  background: #ece4df;
+}
+.navigation {
+  color: #ece4df;
+  margin-left: 25px;
+  margin-right: 9px;
   font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 25px;
 }
 
-.example-spacer {
+.mat-drawer {
+  background-color: #ece4df;
+}
+
+.home-button {
+  display: flex;
+}
+.home {
+  color: #ece4df;
+  font-size: 35px;
+  width: 35px;
+  height: 35px;
+  vertical-align: text-bottom;
+}
+
+// my home button
+// .home  {
+//   height: 40px;
+//   margin-bottom: -5px;
+//   margin-right: 3px;
+//   color: #ece4df;
+//   filter: invert(96%) sepia(3%) saturate(175%) hue-rotate(145deg) brightness(92%) contrast(100%);
+// }
+
+.spacer {
   flex: 1 1 auto;
-}
-
-.spacer1 {
-  flex: 12 1 auto;
 }

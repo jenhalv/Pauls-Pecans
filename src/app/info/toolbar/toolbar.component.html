@@ -1,67 +1,70 @@
 <mat-toolbar>
-    <a routerLink="">
+  <mat-toolbar-row>
 
-      <img alt="Home Page"
-        src="assets/Images/home.png"/>
+    <!-- MOBILE VIEW -->
 
-      <div class="welcome">Paul's Pecans</div>
+    <app-sidenav></app-sidenav>
 
-    </a>
+    <!-- <div fxShow="true">
+        <button class="mat-hamburger-icon" mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
 
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+         <mat-menu class="matMenu" #menu="matMenu">
+
+        <button class="mat-menu-item" mat-menu-item routerLink="">
           <mat-icon>home</mat-icon>
         </button>
 
-        <span>Responsive Navigation</span> <span class="example-spacer"></span>
-        <a routerLink="/About" mat-button>About</a> <a href="#" mat-button>Product</a>
-        <a href="#" mat-button>Menu Item 3</a> <a href="#" mat-button>Menu Item 4</a>
-        <a href="#" mat-button>Menu Item 5</a> <a href="#" mat-button>Menu Item 6</a>
+        <button mat-menu-item routerLink="/about-pecans">
+          <!-- <mat-icon>home</mat-icon> -->
+          <span class="menu-links">About</span>
+        </button>
+
+        <button mat-menu-item routerLink="/product">
+          <!-- <mat-icon>home</mat-icon> -->
+          <span class="menu-links">Product</span>
+        </button>
+
+        <button mat-menu-item routerLink="/tradition">
+          <!-- <mat-icon>home</mat-icon> -->
+          <span class="menu-links">Tradition</span>
+        </button>
+
+      </mat-menu>
+    </div> -->
 
 
-      <!-- <span>My App</span> -->
-      <span class="spacer1"></span>
-      <button class="navigation" routerLink="/About">
+<!-- DESKTOP VIEW -->
+
+<button mat-icon-button routerLink="">
+    <mat-icon class="home">home</mat-icon>
+  </button>
+  <a routerLink="" class="header">Paul's Pecans</a>
+
+    <!-- <a class="home-button" routerLink="">
+        <img class="home" alt="Home Page" src="assets/Images/home.png"/>
+        <mat-icon class="home">home</mat-icon>
+      <div class="header">Paul's Pecans</div>
+      <span class="header">Organic Missouri Pecans</span>
+    </a> -->
+
+    <span class="spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true" class="buttons">
+
+        <a class="navigation" routerLink="/about-pecans">
           <span>About</span>
-     </button>
+        </a>
 
-     <span class="example-spacer"></span>
-     <button mat-icon-button class="navigation" [routerLink]="['/Product']">
-      <span>Product</span>
-    </button>
+        <a class="navigation" routerLink="/product">
+          <span>Product</span>
+        </a>
 
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="navigation" [routerLink]="['/Tradition']">
-     <span>Tradition</span>
-   </button>
+        <a class="navigation" routerLink="/tradition">
+          <span>Tradition</span>
+        </a>
 
+      </div>
 
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-       <mat-icon>share</mat-icon>
-     </button>
-
-      </mat-toolbar>
-
-      <!-- <mat-menu x-position="before" #menu="matMenu">
-          <button mat-menu-item routerLink="/products">Products</button>
-          <button mat-menu-item routerLink="/dashboard">Dashboard</button>
-          <button mat-menu-item>Help</button>
-      </mat-menu> -->
-
-
-      <!-- <mat-sidenav-container fxFlexFill class="example-container">
-
-        <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
-          <div fxLayout="column">
-            <a mat-button routerLink="/about-us">About us</a>
-            <a mat-button routerLink="/prices">Prices</a>
-            <a mat-button routerLink="/start-page">Start page</a>
-            <a mat-button routerLink="/offer">Offer</a>
-            <a mat-button routerLink="/contact">Contact</a>
-          </div>
-        </mat-sidenav>
-      </mat-sidenav-container> -->
-
+  </mat-toolbar-row>
+</mat-toolbar>

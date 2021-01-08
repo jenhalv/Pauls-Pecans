@@ -2,7 +2,6 @@
   padding: 0px;
   max-height: 450px;
   overflow: hidden;
-  margin-top: 20px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   }
@@ -12,38 +11,79 @@
  margin: 0px;
  }
 
- .header {
-  color: #ece4df;
-  line-height: 40px;
-  font-size: 40px;
-  background-color: #204638;
+ .card-container {
+  font-size: 18px;
+  color: #000000;
+  max-width: 1500px;
+}
+
+// GRANDPA QUOTE
+.container-header {
+  width: 100%;
+  margin-top: 30px;
   display: flex;
-  text-align: center;
-  padding: 5px;
-  display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-line {
+  flex: 1;
+}
+
+.container-line-large {
+  flex: 1;
+  height: 30px;
+  color: #204638;
+}
+
+
+.container-title {
+  font-size: 25px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
   font-family: 'Montserrat', sans-serif;
 }
+
+.quote-card {
+  width: 50%;
+  display: flex;
+  box-shadow: none;
+  border: transparent;
+  background: transparent;
+  border-radius: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 0px;
+  font-size: 15px;
+  color: #204638;
+  margin: auto;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+//  .header {
+//   color: #204638;
+//   margin-top: -10px;
+//   background-color: #204638;
+//   font-family: 'Montserrat', sans-serif;
+// }
 
 a {
   text-decoration: none;
 }
-.image-container .btn {
-  font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-}
 
-.image-container .btn:hover {
-  background-color: black;
+@media only screen and (max-width: 590px) {
+  .quote-card {
+    justify-content: center;
+    width: 100%;
+    display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .narrow1 {
+    display: block
+  }
 }

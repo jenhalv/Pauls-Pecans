@@ -28,6 +28,8 @@ import { AboutPecansComponent } from './info/about-pecans/about-pecans.component
 import { ToolbarComponent } from './info/toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -55,13 +57,15 @@ const ANGULAR_MATERIAL_MODULES = [
     HomePageComponent,
     AboutPecansComponent,
     ToolbarComponent,
-    FooterComponent
+    FooterComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    MatSidenavModule,
     ANGULAR_MATERIAL_MODULES
   ],
   providers: [],

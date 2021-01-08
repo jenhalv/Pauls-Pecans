@@ -1,0 +1,28 @@
+<div fxShow="true">
+    <button class="mat-hamburger-icon" mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+     <mat-menu class="matMenu" #menu="matMenu">
+
+    <button class="mat-menu-item" mat-menu-item routerLink="">
+      <mat-icon>home</mat-icon>
+    </button>
+
+    <button mat-menu-item routerLink="/about-pecans">
+      <!-- <mat-icon>home</mat-icon> -->
+      <span class="menu-links">About</span>
+    </button>
+
+    <button mat-menu-item routerLink="/product">
+      <!-- <mat-icon>home</mat-icon> -->
+      <span class="menu-links">Product</span>
+    </button>
+
+    <button mat-menu-item routerLink="/tradition">
+      <!-- <mat-icon>home</mat-icon> -->
+      <span class="menu-links">Tradition</span>
+    </button>
+
+  </mat-menu>
+</div>
