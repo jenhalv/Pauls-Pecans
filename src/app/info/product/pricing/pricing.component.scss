@@ -2,9 +2,24 @@
   text-align: center;
   background: transparent;
   font-size: 45px;
-  line-height: 50px;
-  font-weight: bolder;
+  line-height: 35px;
+  font-weight: 700;
+  padding-top: 25px;
   font-family: "Montserrat", sans-serif;
+}
+
+.quote-card {
+  max-width: 600px;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  opacity: 60%;
+  margin: auto;
+  justify-content: flex-end;
+  padding-right: 3px;
+  flex-wrap: wrap;
+  height: 31px;
 }
 
 mat-grid-tile {
@@ -21,54 +36,23 @@ mat-grid-list {
   flex-wrap: wrap;
  }
 
-.container-line {
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.quote-card {
-  max-width: 600px;
-  display: flex;
-  box-shadow: none;
-  border: transparent;
-  background: transparent;
-  border-radius: 0px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  padding: 0px;
-  font-size: 11px;
-  color: black;
-  opacity: 60%;
-  margin: auto;
-  justify-content: flex-end;
-  padding-right: 2px;
-  flex-wrap: wrap;
-  height: 15px;
-}
-
-.title {
-  background-color: transparent;
-  }
-
-   .grid-subtitle {
+.grid-title {
     max-width: 600px;
   }
 
-  .grid-subtitle1 {
-    font-weight: bold;
+.grid-title1 {
+    font-weight: 700;
     font-size: 15px;
     border: 1px solid black;
     box-sizing: border-box;
   }
 
-  .grid-subtitle2 {
-    font-weight: bold;
+.grid-title2 {
+    font-weight: 700;
     font-size: 17px;
     border: 1px solid black;
     box-sizing: border-box;
   }
-
 
 .grid-text {
   max-width: 600px;
@@ -82,11 +66,12 @@ mat-grid-list {
 
 .grid-text2 {
   font-size: 17px;
-  font-weight: bold;
+  font-weight: 700;
   border: 1px solid black;
   box-sizing: border-box;
 }
 
+// OVERWRITE DESIGN STYLES
 .mat-card-header .mat-card-title {
   margin-bottom: 0px;
   font-family: 'Montserrat', sans-serif;

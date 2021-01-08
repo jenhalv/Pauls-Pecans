@@ -1,62 +1,48 @@
-<div class="product-header">
-  <div class="container-line"><mat-divider></mat-divider></div>PRICING
-<div class="container-line"><mat-divider></mat-divider></div>
+<div class="product-header">PRICING
+  <div class="quote-card">** Pricing & availability subject to change. **</div>
+</div>
 
-  <mat-card class="quote-card">** Pricing & availability subject to change. **</mat-card>
- </div>
+<mat-grid-list class="grid-title" cols = "4" rowHeight = "30px">
+    <mat-grid-tile class="grid-title1"
+    [colspan] = "1"
+    [rowspan] = "1">POUNDS
+    </mat-grid-tile>
 
+    <mat-grid-tile class="grid-title1"
+    [colspan] = "1"
+    [rowspan] = "1">PRICE
+    </mat-grid-tile>
 
-<mat-grid-list cols = "4" rowHeight = "20px">
+    <mat-grid-tile class="grid-title1"
+    [colspan] = "1"
+    [rowspan] = "1">S&H
+    </mat-grid-tile>
 
-<mat-grid-tile class="title"
-[colspan] = "4"
-[rowspan] = "1">
-</mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list class="grid-subtitle" cols = "4" rowHeight = "30px">
-<mat-grid-tile class="grid-subtitle1"
-[colspan] = "1"
-[rowspan] = "1">POUNDS
-</mat-grid-tile>
-
-<mat-grid-tile class="grid-subtitle1"
-[colspan] = "1"
-[rowspan] = "1">PRICE
-</mat-grid-tile>
-
-<mat-grid-tile class="grid-subtitle1"
-[colspan] = "1"
-[rowspan] = "1">S&H
-</mat-grid-tile>
-
-<mat-grid-tile class="grid-subtitle2"
-[colspan] = "1"
-[rowspan] = "1">TOTAL
-</mat-grid-tile>
+    <mat-grid-tile class="grid-title2"
+    [colspan] = "1"
+    [rowspan] = "1">TOTAL
+    </mat-grid-tile>
 </mat-grid-list>
 
 <mat-grid-list class="grid-text" cols = "4" rowHeight = "30px" *ngFor="let price of PRICE">
+    <mat-grid-tile class="grid-text1"
+    [colspan] = "1"
+    [rowspan] = "1">{{price.pounds}}
+    </mat-grid-tile>
 
-<mat-grid-tile class="grid-text1"
-[colspan] = "1"
-[rowspan] = "1">{{price.pounds}}
-</mat-grid-tile>
+    <mat-grid-tile class="grid-text1"
+    [colspan] = "1"
+    [rowspan] = "1">{{price.price}}
+    </mat-grid-tile>
 
-<mat-grid-tile class="grid-text1"
-[colspan] = "1"
-[rowspan] = "1">{{price.price}}
-</mat-grid-tile>
+    <mat-grid-tile class="grid-text1"
+    [colspan] = "1"
+    [rowspan] = "1">{{price.shipping}}
+    </mat-grid-tile>
 
-<mat-grid-tile class="grid-text1"
-[colspan] = "1"
-[rowspan] = "1">{{price.shipping}}
-</mat-grid-tile>
-
-<mat-grid-tile  class="grid-text2"
-[colspan] = "1"
-[rowspan] = "1" >
-{{price.total}}
-</mat-grid-tile>
-
+    <mat-grid-tile  class="grid-text2"
+    [colspan] = "1"
+    [rowspan] = "1" >
+    {{price.total}}
+    </mat-grid-tile>
 </mat-grid-list>

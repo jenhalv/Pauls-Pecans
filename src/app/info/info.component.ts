@@ -13,7 +13,7 @@ export class InfoComponent implements OnInit {
       title: 'About',
       image: 'assets/Images/tassels.jpg',
       imageAlt: 'pecan tassels on a tree',
-      content: 'Our family has been growing & grafting organic pecan trees for 46 years in southwestern Missouri.',
+      content: 'Our family has been growing & grafting pecan trees for 46 years in southwestern Missouri.',
       path: 'about-pecans',
     },
     {
