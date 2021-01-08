@@ -29,7 +29,7 @@ import { ToolbarComponent } from './info/toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
+import { SidenavComponent } from './info/toolbar/sidenav/sidenav.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,

@@ -1,53 +1,16 @@
 <mat-toolbar>
   <mat-toolbar-row>
 
-    <!-- MOBILE VIEW -->
+<!-- MOBILE VIEW -->
 
     <app-sidenav></app-sidenav>
 
-    <!-- <div fxShow="true">
-        <button class="mat-hamburger-icon" mat-icon-button [matMenuTriggerFor]="menu">
-          <mat-icon>menu</mat-icon>
-        </button>
-
-         <mat-menu class="matMenu" #menu="matMenu">
-
-        <button class="mat-menu-item" mat-menu-item routerLink="">
-          <mat-icon>home</mat-icon>
-        </button>
-
-        <button mat-menu-item routerLink="/about-pecans">
-          <!-- <mat-icon>home</mat-icon> -->
-          <span class="menu-links">About</span>
-        </button>
-
-        <button mat-menu-item routerLink="/product">
-          <!-- <mat-icon>home</mat-icon> -->
-          <span class="menu-links">Product</span>
-        </button>
-
-        <button mat-menu-item routerLink="/tradition">
-          <!-- <mat-icon>home</mat-icon> -->
-          <span class="menu-links">Tradition</span>
-        </button>
-
-      </mat-menu>
-    </div> -->
-
-
 <!-- DESKTOP VIEW -->
 
-<button mat-icon-button routerLink="">
+<button fxShow="true" fxHide.lt-md="true" mat-icon-button routerLink="">
     <mat-icon class="home">home</mat-icon>
   </button>
   <a routerLink="" class="header">Paul's Pecans</a>
-
-    <!-- <a class="home-button" routerLink="">
-        <img class="home" alt="Home Page" src="assets/Images/home.png"/>
-        <mat-icon class="home">home</mat-icon>
-      <div class="header">Paul's Pecans</div>
-      <span class="header">Organic Missouri Pecans</span>
-    </a> -->
 
     <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md="true" class="buttons">
