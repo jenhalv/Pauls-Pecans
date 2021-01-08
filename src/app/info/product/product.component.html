@@ -7,100 +7,26 @@
 <div class="info">
 <mat-card>
   <div class="info-title">Our Product:</div>
-  <div class="info-text">We sell shelled pecans for $15 per pound (pricing subject to change).&nbsp;&nbsp;If you are not local, we can ship your purchase via USPS anywhere in the US.&nbsp;&nbsp;Our pecans have been organically grown, handpicked, machine cracked, shelled by hand & rinsed (not soaked).&nbsp;&nbsp;If you choose to rinse your pecans again (removing any remaining pecan dust & particles), let dry thoroughly in a single layer on paper towels before storing them.</div>
+    <br>
+      <div class="info-text">We sell shelled pecans for $15 per pound (pricing subject to change).&nbsp;&nbsp;If you are not local, we can ship your purchase via USPS anywhere in the US.<br>
+      <br>
+      Our pecans have been organically grown, handpicked, machine cracked, shelled by hand & rinsed (not soaked).&nbsp;&nbsp;If you choose to rinse your pecans again (removing any remaining pecan dust & particles), let dry thoroughly in a single layer on paper towels before storing them.</div>
   <br>
   <div class="info-title">Storage Info:</div>
-  <div class="info-text">Although pecans are often described as a semi-perishable product, proper storage techniques must be used to maintain good nut quality.&nbsp;&nbsp;Pecans that won’t be consumed immediately will stay fresh well over a year if stored in a freezer.&nbsp;&nbsp;Pecans can stay fresh for several days at room temperature in open bowls or for weeks if refrigerated.&nbsp;&nbsp;Poor storage conditions often lead to darkening of the kernel and rancidity of the oils, thus destroying the delicious natural flavor and aroma of the nuts.</div>
+    <br>
+      <div class="info-text">Although pecans are often described as a semi-perishable product, proper storage techniques must be used to maintain good nut quality.&nbsp;&nbsp;Pecans that won’t be consumed immediately will stay fresh well over a year if stored in a freezer.<br>
+      <br>
+      Pecans can stay fresh for several days at room temperature in open bowls or for weeks if refrigerated.&nbsp;&nbsp;Poor storage conditions often lead to darkening of the kernel and rancidity of the oils, thus destroying the delicious natural flavor and aroma of the nuts.</div>
   <br>
   <div class="safety-card">Safety Warning:&nbsp;&nbsp;Your shelled pecans may contain tiny pecan shell fragments.</div>
 </mat-card>
 
 </div>
 
-  <div class="product-header">
-      <div class="container-line"><mat-divider></mat-divider></div>PRICING
-    <div class="container-line"><mat-divider></mat-divider></div>
-
-      <mat-card class="quote-card">** Pricing & availability subject to change. **</mat-card>
-     </div>
-
-
-<mat-grid-list cols = "4" rowHeight = "20px" class="grid-title">
-
-  <mat-grid-tile class="title"
-  [colspan] = "4"
-  [rowspan] = "1">
-  </mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list class="grid-subtitle" cols = "4" rowHeight = "30px">
-<mat-grid-tile class="grid-subtitle1"
-  [colspan] = "1"
-  [rowspan] = "1">POUNDS
-  </mat-grid-tile>
-
-  <mat-grid-tile class="grid-subtitle1"
-  [colspan] = "1"
-  [rowspan] = "1">PRICE
-  </mat-grid-tile>
-
-  <mat-grid-tile class="grid-subtitle1"
-  [colspan] = "1"
-  [rowspan] = "1">S&H
-  </mat-grid-tile>
-
-  <mat-grid-tile class="grid-subtitle2"
-  [colspan] = "1"
-  [rowspan] = "1">TOTAL
-  </mat-grid-tile>
-</mat-grid-list>
-
-<mat-grid-list class="grid-text" cols = "4" rowHeight = "30px" *ngFor="let price of PRICE">
-
-    <mat-grid-tile class="grid-text1"
-    [colspan] = "1"
-    [rowspan] = "1">{{price.pounds}}
-    </mat-grid-tile>
-
-    <mat-grid-tile class="grid-text1"
-    [colspan] = "1"
-    [rowspan] = "1">{{price.price}}
-    </mat-grid-tile>
-
-    <mat-grid-tile class="grid-text1"
-    [colspan] = "1"
-    [rowspan] = "1">{{price.shipping}}
-    </mat-grid-tile>
-
-    <mat-grid-tile  class="grid-text2"
-    [colspan] = "1"
-    [rowspan] = "1" >
-    {{price.total}}
-    </mat-grid-tile>
-
-</mat-grid-list>
+<app-pricing></app-pricing>
 
 <br>
 
-    <div class="small-title">Payment Options</div>
-
-    <div class="payment-pics">
-
-    <mat-card class="payments">
-        <a target="_blank" href="https://www.paypal.com">
-        <img class="paypal-pic" src="/assets/Images/Paypal_Icon.png" alt="Email Jen"/></a>
-        <div class="text">Find me on PayPal<br>
-         jenhalv06@gmail.com</div>
-      </mat-card>
-
-      <mat-card class="payments">
-        <div class="text">Mail a check payable to:<br>
-            Jennifer Halvorson<br>
-            568 SW County Road 7508<br>
-            Rich Hill, MO 64779
-            </div>
-            <img class="mailbox-pic" src="/assets/Images/Mailbox_Icon.png" alt="Text Jen"/>
-    </mat-card>
-  </div>
+<app-payment></app-payment>
 
   </div>

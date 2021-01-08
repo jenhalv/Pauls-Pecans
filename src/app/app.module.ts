@@ -27,9 +27,13 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 import { ToolbarComponent } from './info/toolbar/toolbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { PaymentComponent } from './info/product/payment/payment.component';
+import { PricingComponent } from './info/product/pricing/pricing.component';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './info/toolbar/sidenav/sidenav.component';
+
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -58,7 +62,9 @@ const ANGULAR_MATERIAL_MODULES = [
     AboutPecansComponent,
     ToolbarComponent,
     FooterComponent,
-    SidenavComponent
+    SidenavComponent,
+    PricingComponent,
+    PaymentComponent,
   ],
   imports: [
     BrowserModule,

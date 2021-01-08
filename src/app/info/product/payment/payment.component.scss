@@ -1,0 +1,125 @@
+
+// PAYMENT CARDS
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  width: auto;
+  display: flex;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.payment-pics {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;;
+  justify-content: center;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  border-bottom: 5px solid black;
+}
+
+.mat-card-subtitle {
+  margin-bottom: 6px;
+}
+
+.payments {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mailbox-pic {
+  width: 75px;
+  height: 70%;
+  margin-top: 20px;
+}
+
+.paypal-pic {
+  width: 75px;
+  padding-bottom: 0px;
+}
+
+.mat-card {
+  transition: box-shadow 0ms cubic-bezier(0);
+  padding: 0px 30px 10px;
+  border-radius: 0px;
+  background-color:transparent;
+}
+
+.mat-card-image:first-child {
+  margin-top: 0px;
+}
+
+.mat-card-image {
+  margin: 0px;
+}
+
+.mat-card-header .mat-card-subtitle:not(:first-child) {
+  margin-top: -2px;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+.text1 {
+  display: flex;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px -10px;
+}
+
+.text2 {
+  display: flex;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 5px -10px;
+}
+
+.text3 {
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px -10px;
+}
+
+.text4 {
+  display: flex;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 5px -10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 290px) {
+  .mailbox-pic {
+    margin-top: 0px;
+  }
+  .payments {
+    display: block;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 360px) {
+.mat-card {
+  padding: 0px 5px 5px;
+}
+}
