@@ -13,7 +13,7 @@ export class InfoComponent implements OnInit {
       title: 'About',
       image: 'assets/Images/tassels.jpg',
       imageAlt: 'pecan tassels on a tree',
-      content: 'Our family has been growing & grafting pecan trees for 46 years in southwestern Missouri.',
+      content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
       path: 'about-pecans',
     },
     {
@@ -27,7 +27,7 @@ export class InfoComponent implements OnInit {
       title: 'Tradition',
       image: 'assets/Images/flower.jpg',
       imageAlt: 'pecan flower',
-      content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
+      content: 'Our family has been growing & grafting pecan trees for 46 years in southwestern Missouri.',
       path: 'tradition',
     }
 ];

@@ -33,7 +33,7 @@ import { PricingComponent } from './info/product/pricing/pricing.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { SidenavComponent } from './info/toolbar/sidenav/sidenav.component';
-
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -72,6 +72,7 @@ const ANGULAR_MATERIAL_MODULES = [
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatSidenavModule,
+    YouTubePlayerModule,
     ANGULAR_MATERIAL_MODULES
   ],
   providers: [],

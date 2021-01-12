@@ -134,11 +134,17 @@ body {
 :host {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #204638;
   background-color: #ebe3de;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.coming-soon {
+  font-size: 30px;
+  text-align: center;
+  color: red;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
 

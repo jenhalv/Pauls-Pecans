@@ -2,19 +2,30 @@
   background-color: #58504e;
 }
 
-.recipe-header {
-  width: 100%;
-  max-width: 986px;
+.card {
+  margin: 10px;
+  margin-bottom: 0px;
+  background: none;
+  width: 700px;
+  box-shadow: 0px;
   color: #ece4df;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+.recipe-header {
   line-height: 40px;
   font-size: 40px;
-  display: flex;
-  text-align: center;
-  padding: 5px;
-  padding-bottom: 0px;
-  display: block;
-  font-family: 'Montserrat', sans-serif;
-  flex-wrap: wrap;
+}
+
+.recipe-subheader {
+  line-height: 18px;
+  font-size: 16px;
+  padding-top: 5px;
+
 }
 
 .project-card {

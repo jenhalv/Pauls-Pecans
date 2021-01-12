@@ -15,16 +15,24 @@
   font-family: 'Montserrat', sans-serif,
 }
 
-h2 {
-  max-width: 1050px;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
+.info {
+  display: flex;
   flex-wrap: wrap;
-  margin-bottom: 0%;
-  margin-top: 10px;
+  justify-content: center;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.info-text {
+  padding: 0px 10px 0px 20px;
   font-family: 'Montserrat', sans-serif;
-  padding: 5px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .mat-card-image:first-child {

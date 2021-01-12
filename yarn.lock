@@ -261,6 +261,14 @@
   dependencies:
     tslib "^2.0.0"
 
+"@angular/youtube-player@^11.0.3":
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/youtube-player/-/youtube-player-11.0.3.tgz#aff4fabe34c4551d1e04822e79052adc0841b197"
+  integrity sha512-1GlJSHK0hLzNLrw8nUJmtu75rYsycJkMj7OCb1kC3Rvb78RUlgmpGJCb2tCsFl34f4sElJgpEevSLC92C79iDg==
+  dependencies:
+    "@types/youtube" "^0.0.38"
+    tslib "^2.0.0"
+
 "@apidevtools/json-schema-ref-parser@^9.0.3":
   version "9.0.6"
   resolved "https://registry.yarnpkg.com/@apidevtools/json-schema-ref-parser/-/json-schema-ref-parser-9.0.6.tgz#5d9000a3ac1fd25404da886da6b266adcd99cf1c"
@@ -1427,6 +1435,11 @@
     "@types/node" "*"
     "@types/source-list-map" "*"
     source-map "^0.6.1"
+
+"@types/youtube@^0.0.38":
+  version "0.0.38"
+  resolved "https://registry.yarnpkg.com/@types/youtube/-/youtube-0.0.38.tgz#04aa5efa61f4d52e9cf682575a9dfed58f31e8c1"
+  integrity sha512-rS0nLlnnZIvOfBNT4957rkKRMHjHxutoVhSEzowocYgNiTMVBmN+Hbkf/L3TeGMMtts9uKZ9gw7O2JLHREVnIw==
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"

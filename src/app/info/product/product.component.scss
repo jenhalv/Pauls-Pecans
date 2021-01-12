@@ -23,9 +23,7 @@
  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
  }
 
-
-
-.info {
+.info-container {
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -33,6 +31,19 @@
   box-shadow: none;
   border: none;
   width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.info-content {
+  max-width: 700px;
+  margin: 0px;
+  padding: 5px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info-title {
@@ -40,6 +51,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 700;
+  color: black;
   font-style: italic;
 }
 
@@ -49,6 +61,7 @@
   font-size: 16px;
   font-weight: 500;
   max-width: 650px;
+  color: black;
 }
 
 .safety-card {
@@ -57,6 +70,7 @@
   font-size: 11px;
   line-height: 12px;
   opacity: 60%;
+  color: black;
   padding: 0px 10px 0px 20px;
 }
 
@@ -77,11 +91,40 @@ a {
   margin: 0px;
 }
 
+.jar {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 5px;
+  border: white 7px solid;
+}
 .mat-card:not([class*=mat-elevation-z]) {
   box-shadow: none;
 }
 
 .mat-card {
-  opacity: 70%;
+  background: rgb(#ece4df,.7);
   margin: 7px;
+}
+
+.mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
+  margin-bottom: 10px;
+}
+
+.mat-card[_ngcontent-mvb-c128] > [_ngcontent-mvb-c128]:last-child:not(.mat-card-footer), .mat-card-content[_ngcontent-mvb-c128] > [_ngcontent-mvb-c128]:last-child:not(.mat-card-footer) {
+  margin-bottom: 0px;
+ }
+
+@media only screen and (max-width: 325px) {
+  .jar {
+    width: 225px;
+    margin: 5px;
+    background: rgb(white,1);
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .jar {
+    width: 165px;
+    margin: 5px;
+  }
 }
