@@ -28,6 +28,7 @@
 
 .payments1 {
   display: flex;
+  padding: 0px 30px 30px 30px;
 }
 
 .payments2 {
@@ -43,7 +44,7 @@
 
 .paypal-pic {
   width: 70px;
-  padding-bottom: 0px;
+  padding: 0px;
 }
 
 .mat-card {
@@ -61,6 +62,11 @@
 .material-icons-outlined {
   font-size: 55px;
   line-height: 1.5;
+  width: auto;
+}
+
+mat-icon {
+  width: auto;
 }
 
 .mat-card-header .mat-card-subtitle:not(:first-child) {
