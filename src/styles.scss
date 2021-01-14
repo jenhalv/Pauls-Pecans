@@ -413,11 +413,3 @@ $altTheme: mat-light-theme($theme-primary, $theme-accent, $theme-warn);
 .mat-button {
   padding: 1px 16px;
 }
-
-.mat-card-image:first-child {
-  margin-top: 0px;
-}
-
-.mat-card-image {
-  margin: 0 -16px;
-}
