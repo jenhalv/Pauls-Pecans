@@ -1,34 +1,31 @@
-<div class="product-page">
+<div class="card-container">
 
-  <div class="image-container">
+  <div class="background-image-container">
     <img mat-card-image class="pecan-logo" src="\assets\Images\pecans1.jpg"/>
   </div>
 
-<div class="info-container">
-
+  <div class="info-container">
     <img mat-card-image class="jar" src="/assets/Images/jar.jpg" alt="Jar of pecans"/>
 
-<mat-card class="info-content">
-  <div class="info-title">Our Product:</div>
-    <br>
-      <div class="info-text">We sell shelled pecans for $15 per pound (pricing subject to change).&nbsp;&nbsp;If you are not local, we can ship your purchase via USPS anywhere in the US.&nbsp;&nbsp;See our pricing chart below for more details.<br>
-      <br>
-      Our pecans have been organically grown, handpicked, machine cracked, shelled by hand & rinsed (not soaked).&nbsp;&nbsp;If you choose to rinse your pecans again (removing any remaining pecan dust, fragments, & shell particles), let dry thoroughly in a single layer on paper towels before storing them.</div>
-  <br>
-  <div class="info-title">Storage Info:</div>
-    <br>
-      <div class="info-text">Although pecans are often described as a semi-perishable product, proper storage techniques must be used to maintain good nut quality.&nbsp;&nbsp;Pecans that won’t be consumed immediately will stay fresh well over a year if stored in an airtight baggie in the freezer.<br>
-      <br>
-      Pecans can stay fresh for several days at room temperature in open bowls or for weeks if refrigerated.&nbsp;&nbsp;Poor storage conditions often lead to darkening of the kernel and rancidity of the oils, thus destroying the delicious natural flavor and aroma of the nuts.</div>
-  <br>
-  <div class="safety-card">Safety Warning:&nbsp;&nbsp;Your shelled pecans may contain tiny pecan shell fragments.</div>
-
-</mat-card>
-
-</div>
+    <mat-card>
+        <mat-card-title>Our Product:</mat-card-title>
+          <br>
+          <mat-card-content>We sell shelled pecans for $15 per pound (pricing subject to change).&nbsp;&nbsp;If you are not local, we can ship your purchase via USPS anywhere in the US.&nbsp;&nbsp;See our pricing chart below for more details.<br>
+          <br>
+          Our pecans have been organically grown, handpicked, machine cracked, shelled by hand & rinsed (not soaked).&nbsp;&nbsp;If you choose to rinse your pecans again (removing any remaining pecan dust, fragments, & shell particles), let dry thoroughly in a single layer on paper towels before storing them.</mat-card-content>
+          <br>
+          <mat-card-title>Storage Info:</mat-card-title>
+          <br>
+          <mat-card-content>Although pecans are often described as a semi-perishable product, proper storage techniques must be used to maintain good nut quality.&nbsp;&nbsp;Pecans that won’t be consumed immediately will stay fresh well over a year if stored in an airtight baggie in the freezer.<br>
+          <br>
+          Pecans can stay fresh for several days at room temperature in open bowls or for weeks if refrigerated.&nbsp;&nbsp;Poor storage conditions often lead to darkening of the kernel and rancidity of the oils, thus destroying the delicious natural flavor and aroma of the nuts.</mat-card-content>
+          <br>
+        <mat-card-content class="safety-card">Safety Warning:&nbsp;&nbsp;Your shelled pecans may contain tiny pecan shell fragments.</mat-card-content>
+    </mat-card>
+  </div>
 
 <app-pricing></app-pricing>
 
 <app-payment></app-payment>
 
-  </div>
+</div>

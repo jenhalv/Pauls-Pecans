@@ -2,34 +2,25 @@
   <div class="page">
 
     <!-- HEADER PICTURES -->
-
-      <mat-card class="card" *ngFor="let photo of PHOTOS">
-
-          <img mat-card-image class="card-image" [src]="photo.image" [alt]="photo.imageAlt" />
-
-          <mat-card-content class="caption">{{photo.caption}}
-          </mat-card-content>
-
-        </mat-card>
-
-   <mat-card class="info">
-    <div class="info-text">Paul Droz ("Pop") began grafting & growing pecan trees in 1972 with his father, Glenn Droz.&nbsp;&nbsp;Together they planted hundreds of trees from seed, as well as grafted native trees to produce more plump, meaty nuts.&nbsp;&nbsp;Paul continues harvesting pecans & grafting trees on his property and teaching his children and grandchildren the ins and outs of the pecan farming business.
-    <br><br>
-    Paul has around 3,000 pecan trees on his property, ranging from less than a year to over 150 years old!&nbsp;&nbsp;The trees grow best in rich bottomland soils.&nbsp;&nbsp;The Droz property in Rich Hill is adjacent to the Marais des Cygnes River and has an abundance of pecan, hickory, walnut, and other native Missouri trees.
-    <br><br>
-    His oldest daughter, Jennifer, developed this website to showcase information she has collected from Paul detailing the pecan grafting process.&nbsp;&nbsp;To learn more, visit our <a href="/about-pecans">About</a> page.</div>
-  </mat-card>
-
-<!-- MISCELLANEOUS PICTURES -->
-
-    <mat-card class="card" *ngFor="let card of CARDS">
-
-        <img mat-card-image class="card-image" [src]="card.image" [alt]="card.imageAlt" />
-
-        <mat-card-content class="caption">{{card.caption}}
-        </mat-card-content>
-
+      <mat-card *ngFor="let photo of PHOTOS">
+        <img mat-card-image [src]="photo.image" [alt]="photo.imageAlt" />
+        <mat-card-footer>{{photo.caption}}</mat-card-footer>
       </mat-card>
+
+    <!-- INFORMATION ABOUT THE FAMILY -->
+      <mat-card-content>Paul "Pop" Droz began grafting & growing pecan trees (pronounced "puh-KAHN" in our neck of the woods‌) in 1972 with his father, Glenn Droz.&nbsp;&nbsp;Together they planted hundreds of trees from seed and grafted numerous native trees to produce more plump, meaty nuts.&nbsp;&nbsp;Paul continues harvesting pecans & grafting trees on his property and teaching his children and grandchildren the ins and outs of the pecan farming business.
+      <br><br>
+      Paul has around 3,000 pecan trees on his property, ranging from less than a year to over 150 years old!&nbsp;&nbsp;The trees grow best in rich bottomland soils.&nbsp;&nbsp;The Droz property in Rich Hill is adjacent to the Marais des Cygnes River and has an abundance of pecan, hickory, walnut, and other native Missouri trees.  ‌
+      <br><br>
+      His oldest daughter, Jennifer, developed this website to showcase information she has collected from Paul detailing the pecan grafting process.&nbsp;&nbsp;To learn more, visit our <a href="/about-pecans">About</a> page.
+      </mat-card-content>
+
+    <!-- MISCELLANEOUS PICTURES -->
+
+    <mat-card *ngFor="let card of CARDS">
+      <img mat-card-image [src]="card.image" [alt]="card.imageAlt" />
+      <mat-card-footer>{{card.caption}}</mat-card-footer>
+    </mat-card>
 
 </div>
 </div>

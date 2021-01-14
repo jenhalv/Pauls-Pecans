@@ -1,23 +1,19 @@
 <div class="card-container">
-  <mat-card class="project-card" *ngFor="let card of CARDS">
+  <mat-card *ngFor="let card of CARDS">
 
     <img mat-card-image [src]="card.image" [alt]="card.imageAlt" />
 
-    <mat-card-header class="project-header">
-      <mat-card-title class="project-title">{{card.title}}</mat-card-title>
-    </mat-card-header>
+    <mat-card-title>{{card.title}}</mat-card-title>
 
-    <mat-card-content class="project-content">{{card.content}}
-    </mat-card-content>
+    <mat-card-content>{{card.content}}</mat-card-content>
 
     <mat-card-actions align="end">
-      <button mat-button class="learn-more" [routerLink]="[card.path]">Learn More</button>
+      <button mat-button [routerLink]="[card.path]">Learn More</button>
     </mat-card-actions>
 
     <!-- <mat-card-actions align="end">
-      <button mat-button class="learn-more" (click)="info(card)">Learn More</button>
+      <button mat-button (click)="info(card)">Learn More</button>
     </mat-card-actions> -->
 
   </mat-card>
-
 </div>

@@ -1,98 +1,27 @@
 .card-container {
-  font-size: 18px;
-  color: #000000;
   max-width: 1500px;
+  margin-bottom: 15px;
 }
 
-// INDIVIDUAL INFO CARDS
-.project-card {
+.mat-card {
   max-width: 280px;
-  padding-top: 0px;
   margin: 15px;
-  margin-top: 25px;
-  margin-bottom: 30px;
   border: transparent;
   border-radius: 0px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.card-image {
-  width: 100%;
-}
-
-a {
-  color: black;
-}
-
-a:visited {
-  color: inherit;
-}
-
-.project-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.mat-card-header .mat-card-title {
-  margin-bottom: 7px;
-  font-family: 'Montserrat', sans-serif;
 }
 
 .mat-card-content {
   margin-bottom: 0px;
-  padding: 5px 0px;
-  font-family: 'Montserrat', sans-serif;
 }
 
-.learn-more {
-    color: white;
-    cursor: pointer;
-    background-color: black;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 25px;
-    align-content: flex-end;
+.mat-card-header {
+  display: block;
 }
 
-.mat-action-row {
-  padding: 0px;
-}
-
-.mat-card-actions {
-padding: 0px;
-}
-.mat-button {
+button {
   padding: 1px 6px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.mat-card-image:first-child {
-  margin-top: 0px;
-}
-
-:host ::ng-deep a:visited {
-  color: inherit;
-}
-
-.mat-card-image {
-  margin: 0 -16px;
-}
-/* Responsive Styles */
-@media only screen and (max-width: 290px) {
-  .project-card {
-    max-width: 200px;
-  }
-}
-@media only screen and (max-width: 590px) {
-  .quote-card {
-    justify-content: center;
-    padding-right: 0px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .narrow1 {
-    display: block
-  }
+  cursor: pointer;
+  background-color: black;
+  line-height: 25px;
+  color: white;
 }
