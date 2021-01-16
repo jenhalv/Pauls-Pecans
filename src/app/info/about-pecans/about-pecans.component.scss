@@ -1,17 +1,19 @@
-.card-container {
-  background-color: #ece4df;
-  padding-bottom: 25px;
-}
-
 .mat-card {
-  margin-top: 70px;
+  max-width: 1500px;
   background: none;
   max-width: 855px;
+  height: auto;
   box-shadow: none;
   color: #58504e;
+  padding-bottom: 15px;
 }
 
-.mat-card-title {
+.mat-card>:first-child, .mat-card-content>:first-child {
+  margin-top: 65px;
+}
+
+mat-card-title {
+  margin-top: 170px;
   font-size: 40px;
   line-height: 40px;
 }
@@ -21,77 +23,3 @@
   font-size: 17px;
   padding: 10px;
 }
-
-.tool-list {
-  max-width: 900px;
-  color: #eeeeee;
-  background-color: #58504e;
-  border: 5px solid #ece4df;
-  border-radius: 0px;
-  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
-  margin: 7px;
-}
-
-.tool-title {
-  font-size: 21px;
-  text-align: left;
-  line-height: 20px;
-}
-
-.tools {
-  column-count: 5;
-}
-
-//List of experience
-ul {
-  list-style: none;
-  text-align: left;
-  margin: 0px;
-  padding-inline-start: 10px;
-}
-
-//Colored Checkmarks
-ul li:before {
-  content: '✓';
-  color: #ece4df;
-  padding-right: 5px;
-}
-
-youtube-player {
-  width: 575px;
-  height: auto;
-}
-.video {
-  max-width: 200px;
-}
-.example-card {
-  max-width: 600px;
-}
-.example-header-image {
-  background-image: url('https://www.youtube.com/watch?v=Naok1-Ec7OU');
-  background-size: cover;
-}
-
-@media only screen and (max-width: 1020px) {
-  .tools {
-    column-count: 4;
-  }
-  }
-
-@media only screen and (max-width: 830px) {
-.tools {
-  column-count: 3;
-}
-}
-
-@media only screen and (max-width: 530px) {
-  .tools {
-    column-count: 2;
-  }
-  }
-
-@media only screen and (max-width: 365px) {
-  .tools {
-    column-count: 1;
-  }
-  }

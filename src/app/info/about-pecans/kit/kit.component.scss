@@ -1,0 +1,57 @@
+.mat-card {
+  max-width: 900px;
+  height: auto;
+  color: #eeeeee;
+  background-color: #58504e;
+  border: 5px solid #ece4df;
+  border-radius: 0px;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  margin: 7px;
+}
+
+.mat-card-title {
+  font-size: 21px;
+  text-align: left;
+  line-height: 20px;
+}
+
+//List of items
+ul {
+  list-style: none;
+  text-align: left;
+  margin: 0px;
+  padding-inline-start: 10px;
+  column-count: 5;
+}
+
+//Colored Checkmarks
+ul li:before {
+  content: '✓';
+  color: #ece4df;
+  padding-right: 5px;
+}
+
+
+@media only screen and (max-width: 1020px) {
+  ul {
+    column-count: 4;
+  }
+  }
+
+@media only screen and (max-width: 830px) {
+  ul {
+  column-count: 3;
+}
+}
+
+@media only screen and (max-width: 530px) {
+  ul {
+    column-count: 2;
+  }
+  }
+
+@media only screen and (max-width: 365px) {
+  ul {
+    column-count: 1;
+  }
+  }

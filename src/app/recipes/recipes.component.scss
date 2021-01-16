@@ -7,6 +7,7 @@
   margin-bottom: 0px;
   background: none;
   width: 700px;
+  height: auto;
   box-shadow: 0px;
   color: #ece4df;
 }
@@ -24,11 +25,13 @@
   line-height: 18px;
   font-size: 16px;
   padding-top: 5px;
+  color: #ece4df;
 
 }
 
 .project-card {
   max-width: 454px;
+  height: auto;
   padding: 10px;
   margin-left: 12px;
   margin-right: 12px;
@@ -37,10 +40,6 @@
   background-color: #ece4df;
   border: 6px #c7af93 solid;
   box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
-}
-
-.card-image {
-  width: 100%;
 }
 
 .mat-card-title {
@@ -74,5 +73,6 @@
 @media only screen and (max-width: 290px) {
   .project-card {
     max-width: 200px;
+    height: auto;
   }
 }

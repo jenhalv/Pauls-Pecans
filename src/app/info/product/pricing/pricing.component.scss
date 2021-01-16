@@ -9,6 +9,7 @@
 
 .quote-card {
   max-width: 600px;
+  height: auto;
   display: flex;
   font-weight: 500;
   font-size: 11px;
@@ -35,6 +36,7 @@ mat-grid-list {
 
 .grid-title {
     max-width: 600px;
+    height: auto;
   }
 
 .grid-title1 {
@@ -53,6 +55,7 @@ mat-grid-list {
 
 .grid-text {
   max-width: 600px;
+  height: auto;
 }
 
 .grid-text1 {

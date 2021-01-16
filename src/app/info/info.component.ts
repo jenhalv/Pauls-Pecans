@@ -15,6 +15,7 @@ export class InfoComponent implements OnInit {
       imageAlt: 'pecan tassels on a tree',
       content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
       path: 'about-pecans',
+      label: 'click to learn more about grafting trees',
     },
     {
       title: 'Product',
@@ -22,6 +23,7 @@ export class InfoComponent implements OnInit {
       imageAlt: 'pecans in husk',
       content: 'We produce quality organic fresh raw pecans grown on our responsibly-farmed orchard.',
       path: 'product',
+      label: 'click to learn more the products we sell',
     },
     {
       title: 'Tradition',
@@ -29,6 +31,7 @@ export class InfoComponent implements OnInit {
       imageAlt: 'pecan flower',
       content: 'Our family has been growing & grafting pecan trees for 46 years in southwestern Missouri.',
       path: 'tradition',
+      label: 'click to learn more about our family tradition',
     }
 ];
 

@@ -7,24 +7,28 @@
 
 <!-- DESKTOP VIEW -->
 
-<button fxShow="true" fxHide.lt-md="true" mat-icon-button routerLink="">
+<button fxShow="true" fxHide.lt-md="true" mat-icon-button routerLink="" alt="home page" aria-label="home page">
     <mat-icon class="home">home</mat-icon>
   </button>
   <a routerLink="" class="header">Paul's Pecans</a>
 
     <span class="spacer"></span>
-      <div fxShow="true" fxHide.lt-md="true" class="buttons">
+      <div fxShow="true" fxHide.lt-md="true">
 
-        <a class="navigation" routerLink="/about-pecans">
+        <a class="navigation" routerLink="/about-pecans" aria-label="about page">
           <span>About</span>
         </a>
 
-        <a class="navigation" routerLink="/product">
+        <a class="navigation" routerLink="/product" aria-label="product page">
           <span>Product</span>
         </a>
 
-        <a class="navigation" routerLink="/tradition">
+        <a class="navigation" routerLink="/tradition" aria-label="tradition page">
           <span>Tradition</span>
+        </a>
+
+        <a class="navigation" routerLink="/contact" aria-label="contact page">
+          <span>Contact</span>
         </a>
 
       </div>

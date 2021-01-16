@@ -1,25 +1,31 @@
 .image-container {
   padding: 0px;
-  max-height: 450px;
+  max-height: 350px;
   overflow: hidden;
   width: 100%;
+  height: auto;
   }
 
 .pecan-logo {
  width: 100%;
- margin: 0px;
- margin-top: 55px;
+ height: auto;
+ }
+
+ .mat-card-image:first-child {
+  margin: 50px 0px 0px 0px;
  }
 
  .card-container {
   font-size: 18px;
   color: #000000;
   max-width: 1500px;
+  height: auto;
 }
 
 // GRANDPA QUOTE
 .container-header {
   width: 100%;
+  height: auto;
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -41,6 +47,7 @@
 
 .quote-card {
   width: 50%;
+  height: auto;
   display: flex;
   box-shadow: none;
   border: transparent;
@@ -61,6 +68,7 @@ a {
   .quote-card {
     justify-content: center;
     width: 100%;
+    height: auto;
     display: block;
   }
 }

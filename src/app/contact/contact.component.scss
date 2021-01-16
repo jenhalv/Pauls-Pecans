@@ -1,0 +1,41 @@
+.mat-card {
+  max-width: 400px;
+  box-shadow: none;
+  padding: 70px 0px 10px 20px;
+  background-color: #ece4df;
+  display: block;
+  border-radius: 0px;
+  margin: auto;
+  text-align: center;
+  }
+
+mat-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: black;
+}
+
+mat-card-content {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 300px) {
+  mat-card-content {
+    display: block;
+  }
+}
+
+a {
+  text-decoration: none;
+  width: 195px;
+  height: 100px;
+}
+
+mat-icon {
+  width: 55px;
+  height: 55px;
+  font-size: 55px;
+}

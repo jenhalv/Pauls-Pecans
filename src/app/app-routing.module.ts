@@ -5,7 +5,7 @@ import { TraditionComponent } from './info/tradition/tradition.component';
 import { ProductComponent } from './info/product/product.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
-import { ToolbarComponent } from '../../../../../Arvid_8_3_2020/ArvidManage/src/app/shared/app-layouts/shared/component/toolbar/toolbar.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -19,6 +19,10 @@ const routes: Routes = [
   {
     path: 'tradition',
     component: TraditionComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: '',

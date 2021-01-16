@@ -1,80 +1,26 @@
 footer {
-  text-align: center;
   background-color:  #ece4df;
-  margin: auto;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  display: block;
-}
-
-.title {
-  font-size: 28px;
-  font-weight: 500;
-  width: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  display: flex;
-  padding: 20px;
-  margin: auto;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.contact {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  box-shadow: none;
-  border: none;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  width: 175px;
-}
-
-.mat-card {
-  transition: box-shadow 0ms cubic-bezier(0);
-  padding: 0px;
-  border-radius: 0px;
-  background-color:transparent;
-}
-
-.mat-card:not([class*=mat-elevation-z]) {
-  box-shadow: none;
-}
-
-img {
-  width: 50px;
-}
-
-.text1 {
-  font-size: 17px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-}
-.text2 {
-  display: flex;
-  justify-content: center;
-  padding: 0px 20px 20px 20px;
-  text-align: center;
+  padding: 0px 15px 15px 15px;
 }
 
-.copyright {
-  font-size: 12px;
+mat-icon {
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  filter: invert(100%);
+}
+
+mat-card-footer {
+  font-size: 11px;
+  margin: 10px 0px;
 }

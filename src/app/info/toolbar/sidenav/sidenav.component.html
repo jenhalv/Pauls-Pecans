@@ -1,24 +1,28 @@
 <div fxShow="true" fxHide.gt-sm="true">
-    <button class="mat-hamburger-icon" mat-icon-button [matMenuTriggerFor]="menu">
+    <button class="small-icon" mat-icon-button [matMenuTriggerFor]="menu" alt="side navigation bar" aria-label="website menu">
       <mat-icon>menu</mat-icon>
     </button>
 
      <mat-menu class="matMenu" #menu="matMenu">
 
-    <button class="mat-menu-item" mat-menu-item routerLink="">
+    <button class="mat-menu-item" mat-menu-item routerLink="" alt="home page" aria-label="home page">
       <mat-icon>home</mat-icon>
     </button>
 
-    <button mat-menu-item routerLink="/about-pecans">
+    <button mat-menu-item routerLink="/about-pecans" alt="about page" aria-label="about page">
       <span class="menu-links">About</span>
     </button>
 
-    <button mat-menu-item routerLink="/product">
+    <button mat-menu-item routerLink="/product" alt="product page" aria-label="product page">
       <span class="menu-links">Product</span>
     </button>
 
-    <button mat-menu-item routerLink="/tradition">
+    <button mat-menu-item routerLink="/tradition" alt="tradition page" aria-label="tradition page">
       <span class="menu-links">Tradition</span>
+    </button>
+
+    <button mat-menu-item routerLink="/contact" alt="contact page" aria-label="contact page">
+      <span class="menu-links">Contact</span>
     </button>
 
   </mat-menu>

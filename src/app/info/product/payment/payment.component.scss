@@ -1,7 +1,9 @@
 .title {
   font-size: 28px;
+  line-height: 25px;
   font-weight: 500;
   width: auto;
+  height: auto;
   display: flex;
   padding: 45px 5px 5px 5px;
   margin: auto;
@@ -23,7 +25,7 @@
 
 .mat-card-subtitle {
   margin-bottom: 6px;
-}
+  }
 
 .payments1 {
   display: flex;
@@ -32,40 +34,25 @@
 
 .payments2 {
   display: flex;
-  padding: 0px 0px 30px 30px;
-}
-
-.mailbox-pic {
-  width: 70px;
-  height: 70%;
-  margin: 20px 0px 0px 0px;
+  padding: 0px 70px 30px 0px;
 }
 
 .paypal-pic {
   width: 70px;
+  height: auto;
   padding: 0px;
 }
 
 .mat-card {
-  transition: box-shadow 0ms cubic-bezier(0);
-  padding: 0px 30px 30px 30px;
+  box-shadow: none;
   border-radius: 0px;
-  background-color:transparent;
+  display: flex;
+  background-color: transparent;
 }
 
 .mat-card-image:first-child {
   margin-top: 0px;
   margin: 0px 0px 0px 0px
-}
-
-.material-icons-outlined {
-  font-size: 55px;
-  line-height: 1.5;
-  width: auto;
-}
-
-mat-icon {
-  width: auto;
 }
 
 .mat-card-header .mat-card-subtitle:not(:first-child) {
@@ -77,22 +64,18 @@ mat-icon {
 }
 
 .text1 {
-  font-size: 18px;
   margin: 6px 0px 3px -10px;
 }
 
 .text2 {
-  display: flex;
-  margin: 5px -10px;
+  margin: 0px -10px;
 }
 
 .text3 {
-  font-size: 18px;
   margin: 5px -10px;
 }
 
 .text4 {
-  display: flex;
   text-align: right;
   margin: 5px -10px;
 }
@@ -103,16 +86,6 @@ a {
 
 /* Responsive Styles */
 @media only screen and (max-width: 290px) {
-  .title {
-    line-height: 25px;
-  }
-  .mailbox-pic {
-    margin: 0px;
-    width: 45px;
-  }
-  .paypal-pic {
-    width: 45px;
-  }
   .payments1 {
     display: block;
   }
@@ -122,13 +95,11 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
-.title {
-  padding: 45px 5px 25px 5px;
+  .payments1 {
+    padding: 0px 10px 30px 10px;
   }
-.mat-card {
-  padding: 0px;
-  }
-.payment-pics {
-  margin-top: 0px;
+
+  .payments2 {
+    padding: 0px 20px 30px 0px;
   }
 }
