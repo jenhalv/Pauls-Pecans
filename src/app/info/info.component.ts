@@ -11,7 +11,7 @@ export class InfoComponent implements OnInit {
   CARDS = [
     {
       title: 'About',
-      image: 'assets/Images/tassels.jpg',
+      image: 'assets/Images/tassels_small.jpg',
       imageAlt: 'pecan tassels on a tree',
       content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
       path: 'about-pecans',
@@ -19,15 +19,15 @@ export class InfoComponent implements OnInit {
     },
     {
       title: 'Product',
-      image: 'assets/Images/tree.jpg',
+      image: 'assets/Images/tree_small.jpg',
       imageAlt: 'pecans in husk',
       content: 'We produce quality organic fresh raw pecans grown on our responsibly-farmed orchard.',
       path: 'product',
-      label: 'click to learn more the products we sell',
+      label: 'click to learn more about the pecans we sell',
     },
     {
       title: 'Tradition',
-      image: 'assets/Images/flower.jpg',
+      image: 'assets/Images/flower_small.jpg',
       imageAlt: 'pecan flower',
       content: 'Our family has been growing & grafting pecan trees for 46 years in southwestern Missouri.',
       path: 'tradition',
