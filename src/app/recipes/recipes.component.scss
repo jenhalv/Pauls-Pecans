@@ -31,12 +31,8 @@
 
 .project-card {
   max-width: 454px;
-  height: auto;
   padding: 10px;
-  margin-left: 12px;
-  margin-right: 12px;
-  margin-top: 6px;
-  margin-bottom: 20px;
+  margin: 6px 12px 20px 12px;
   background-color: #ece4df;
   border: 6px #c7af93 solid;
   box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
@@ -60,7 +56,10 @@
 }
 
 .mat-card-image {
-  margin: 0 -16px;
+    width: calc(90% + 32px);
+    border: 1px solid black;
+    margin: 0px 5px;
+    box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
 }
 
 .mat-card-content {

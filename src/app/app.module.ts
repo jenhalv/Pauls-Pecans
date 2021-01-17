@@ -37,6 +37,7 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
 import { ContactComponent } from './contact/contact.component';
 import { KitComponent } from './info/about-pecans/kit/kit.component';
 import { VideosComponent } from './info/about-pecans/videos/videos.component';
+import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -71,6 +72,7 @@ const ANGULAR_MATERIAL_MODULES = [
     ContactComponent,
     KitComponent,
     VideosComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,

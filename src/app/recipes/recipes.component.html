@@ -6,9 +6,7 @@
 </mat-card>
 
 <div class="card-container">
-  <mat-card class="project-card" *ngFor="let card of CARDS">
-
-      <!-- <img mat-card-image [src]="card.image" [alt]="card.imageAlt" /> -->
+  <mat-card class="project-card" fxLayoutAlign="space-around" fxLayout="column" *ngFor="let card of CARDS">
 
   <mat-card-title class="recipe-title">{{card.title}}</mat-card-title>
 
@@ -17,6 +15,8 @@
 
   <mat-card-subtitle class="recipe-subtitle">Directions:</mat-card-subtitle>
     <mat-card-content [innerHTML]="card.directions">{{card.directions}}</mat-card-content>
+
+  <img mat-card-image [src]="card.image" [alt]="card.imageAlt"/>
 
   </mat-card>
 </div>
