@@ -39,6 +39,13 @@ import { KitComponent } from './info/about-pecans/kit/kit.component';
 import { VideosComponent } from './info/about-pecans/videos/videos.component';
 import { ContactFormComponent } from './contact/contact-form/contact-form.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireMessagingModule } from '@angular/fire/messaging';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { InvoicesComponent } from './invoices/invoices.component';
+
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
   MatToolbarModule,
@@ -73,9 +80,14 @@ const ANGULAR_MATERIAL_MODULES = [
     KitComponent,
     VideosComponent,
     ContactFormComponent,
+    InvoicesComponent,
   ],
   imports: [
     BrowserModule,
+    AngularFireModule,
+    AngularFireAuthModule,
+    AngularFireMessagingModule,
+    AngularFireStorageModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
@@ -83,7 +95,7 @@ const ANGULAR_MATERIAL_MODULES = [
     YouTubePlayerModule,
     ANGULAR_MATERIAL_MODULES
   ],
-  providers: [],
+  providers: [AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
