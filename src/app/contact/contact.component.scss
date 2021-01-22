@@ -5,7 +5,7 @@
 .mat-card {
   max-width: 400px;
   box-shadow: none;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   background-color: #ece4df;
   display: block;
   border-radius: 0px;
@@ -21,6 +21,7 @@ mat-card-title {
 }
 
 mat-card-content {
+  padding-top: 20px; //remove when adding on contact form
   margin-bottom: 0px;
   display: flex;
   justify-content: space-around;

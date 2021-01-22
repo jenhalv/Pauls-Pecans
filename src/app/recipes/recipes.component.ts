@@ -23,7 +23,7 @@ export class RecipesComponent implements OnInit {
       directions: '<ol><li>Preheat the oven to 350°F.</li><li>Thoroughly cream shortening and sugars; add eggs & vanilla and beat well.</li><li>Sift dry ingredients & add to creamed mixture.  Add in oats and nuts. </li><li>Bake 8-10 minutes.</ol>'
     },
     {
-      title: 'Jen\'s Granola',
+      title: 'Jen\'s Granola Bars',
       image: 'assets/Images/Granola.jpg',
       imageAlt: 'granola bars',
       ingredients: '<ul><li>4 cups old fashioned oats (not instant)</li><li>½ cup brown sugar</li><li>½ tsp salt</li><li>½ tsp cinnamon</li><li>1 ½ cups pecans</li><li>1 ½ cups raisins or dried cranberries (optional)</li><li>½ cup olive oil</li><li>½ cup honey or agave nectar</li><li>2 tsp vanilla</li></ul>',

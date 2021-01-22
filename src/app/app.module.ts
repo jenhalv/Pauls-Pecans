@@ -45,6 +45,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { InvoicesComponent } from './invoices/invoices.component';
+import { environment } from '../environments/environment';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -84,7 +85,7 @@ const ANGULAR_MATERIAL_MODULES = [
   ],
   imports: [
     BrowserModule,
-    AngularFireModule,
+    AngularFireModule.initializeApp(environment),
     AngularFireAuthModule,
     AngularFireMessagingModule,
     AngularFireStorageModule,
