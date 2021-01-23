@@ -1,20 +1,47 @@
 <h1>Contact Us!</h1>
 
-<form id="contactForm">
+<form id="contactForm" [formGroup]="contactForm">
+    <!-- <form id="contactForm" #contactForm="ngForm"> -->
+  <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
+    <mat-label for="name"><i class="fa fa-user"></i>Name</mat-label>
+      <input
+        matInput
+        id="name"
+        name="name"
+        type="text"
+        placeholder="John Doe"
+        required
+        />
+  </mat-form-field>
 
-  <i class="fa fa-user"></i>
-    <label for="name">Name</label>
-      <input id="name" type="text" placeholder="name" required/>
+  <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
+    <mat-label for="email"><i class="fa fa-envelope"></i>Email</mat-label>
+      <input
+        matInput
+        id="email"
+        name="email"
+        type="email"
+        placeholder="john@example.com"
+        [formControl]="email"
+        ngControl
+        required/>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
 
-  <i class="fa fa-envelope"></i>
-    <label for="email">Email</label>
-      <input id="email" type="email" placeholder="email" required/>
+   <mat-form-field appearance="fill">
+    <mat-label><i class="fa fa-pencil fa-flip-horizontal"></i>Message</mat-label>
+          <textarea
+          matInput
+          id="message"
+          placeholder="Please contact us!"
+          cdkTextareaAutosize
+          required
+          ></textarea>
+  </mat-form-field>
 
-  <i class="fa fa-pencil fa-flip-horizontal"></i>
-    <label for="">Message</label>
-      <textarea id="message" placeholder="message" matInput cdkTextareaAutosize required></textarea>
+  <button (click)="onSubmit()">Submit</button>
 
-  <button type="submit">Submit</button>
-  <!-- <button [disabled]="contactForm.invalid" (click)="onSubmit()" (click)="clearForm()" type="submit">Submit</button> -->
+  <!-- <button [disabled]="contactForm.invalid" (click)="onSubmit()" (click)="newHero(); heroForm.reset()" (click)="clearForm()" type="submit">Submit</button> -->
+  <button (click)="reset()">Reset</button>
 
 </form>
