@@ -21,7 +21,7 @@ export class InfoComponent implements OnInit {
       title: 'Product',
       image: 'assets/Images/tree.jpg',
       imageAlt: 'pecans in husk',
-      content: 'We produce quality organic fresh raw pecans grown on our responsibly-farmed orchard.',
+      content: 'We produce & sell quality organic fresh raw pecans grown on our responsibly-farmed orchard.',
       path: 'product',
       label: 'click to learn more about the pecans we sell',
     },

@@ -18,3 +18,4 @@ export class ToolbarComponent implements OnInit {
     this.sidenavToggle.emit();
   }
 }
+

@@ -1,0 +1,70 @@
+.info-container {
+  max-width: 1150px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.mat-card-image {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+  max-width: 335px;
+  height: auto;
+  padding: 5px;
+  margin: auto;
+  border: white 7px solid;
+}
+
+.mat-card-image:first-child {
+  margin-top: 25px;
+}
+
+.mat-card {
+  max-width: 600px;
+  background: rgb(#ece4df,.7);
+  border-radius: 0px;
+  margin: auto;
+  border: black 1px solid;
+}
+
+.mat-card-title {
+  padding: 0px 0px 0px 5px;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.mat-card>:first-child {
+  padding: 0px 0px 0px 5px;
+  margin: -4px 0px 0px;
+}
+
+mat-card-content {
+  padding: 0px 10px 0px 20px;
+}
+
+.safety-card {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 12px;
+  opacity: 60%;
+  color: black;
+  padding: 0px 10px 0px 20px;
+}
+
+// @media only screen and (max-width: 325px) {
+//   .jar {
+//     width: 225px;
+//     height: auto;
+//     margin: 0px 5px;
+//   }
+// }
+
+// @media only screen and (max-width: 290px) {
+//   .jar {
+//     width: 165px;
+//     height: auto;
+//     margin: 0px 5px;
+//   }
+// }
+

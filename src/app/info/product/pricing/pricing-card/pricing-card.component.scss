@@ -1,0 +1,77 @@
+//HEADER
+mat-card {
+  min-width: 450px;
+  margin: 20px auto;
+  background: transparent;
+  display: block;
+}
+
+mat-card-title {
+  text-align: center;
+  background: transparent;
+  font-size: 45px;
+  line-height: 35px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+
+mat-card-footer {
+  max-width: 600px;
+  display: flex;
+  font-size: 11px;
+  opacity: 60%;
+  margin: auto;
+  justify-content: flex-end;
+  padding-right: 3px;
+}
+
+// GRID
+mat-grid-tile {
+  background: #ece4df;
+  opacity: 75%;
+ }
+
+mat-grid-list {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+ }
+
+.grid-title {
+    max-width: 600px;
+    height: auto;
+  }
+
+.grid-title1 {
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+.grid-title2 {
+    font-weight: 700;
+    font-size: 17px;
+    border: 1px solid black;
+    box-sizing: border-box;
+  }
+
+.grid-text {
+  max-width: 600px;
+  height: auto;
+}
+
+.grid-text1 {
+  font-size: 15px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.grid-text2 {
+  font-size: 17px;
+  font-weight: 700;
+  border: 1px solid black;
+  box-sizing: border-box;
+}

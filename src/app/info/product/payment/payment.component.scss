@@ -1,4 +1,4 @@
-.title {
+h1 {
   font-size: 28px;
   line-height: 25px;
   font-weight: 500;
@@ -48,11 +48,6 @@
   border-radius: 0px;
   display: flex;
   background-color: transparent;
-}
-
-.mat-card-image:first-child {
-  margin-top: 0px;
-  margin: 0px 0px 0px 0px
 }
 
 .mat-card-header .mat-card-subtitle:not(:first-child) {

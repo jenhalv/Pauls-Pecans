@@ -9,6 +9,21 @@
   background-color: #ece4df;
 }
 
+.mat-card-image {
+  margin: 0px;
+ }
+.mat-card-image:first-child {
+  margin: 0px;
+  margin-top: 0px;
+ }
+
+.page {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 a:-webkit-any-link {
   color: black;
   cursor: pointer;

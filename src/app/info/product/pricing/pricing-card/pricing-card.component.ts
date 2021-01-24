@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-pricing',
-  templateUrl: './pricing.component.html',
-  styleUrls: ['./pricing.component.scss']
+  selector: 'app-pricing-card',
+  templateUrl: './pricing-card.component.html',
+  styleUrls: ['./pricing-card.component.scss']
 })
-export class PricingComponent implements OnInit {
-
+export class PricingCardComponent implements OnInit {
 
   PRICE = [
     {

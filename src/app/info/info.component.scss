@@ -3,7 +3,7 @@
   margin-bottom: 15px;
 }
 
-.mat-card {
+mat-card {
   max-width: 280px;
   height: auto;
   margin: 15px;
@@ -11,15 +11,15 @@
   border-radius: 0px;
 }
 
-mat-card-image {
-  max-width: 280px;
-  height: auto;
+.mat-card-image {
+  margin: -16px -16px 10px -16px;
 }
-.mat-card-content {
+
+mat-card-content {
   margin-bottom: 0px;
 }
 
-.mat-card-header {
+mat-card-header {
   display: block;
 }
 

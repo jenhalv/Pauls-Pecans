@@ -1,5 +1,4 @@
 .mat-card {
-  max-width: 1500px;
   background: none;
   max-width: 855px;
   height: auto;
@@ -8,12 +7,7 @@
   padding-bottom: 15px;
 }
 
-.mat-card>:first-child, .mat-card-content>:first-child {
-  margin-top: 65px;
-}
-
 mat-card-title {
-  margin-top: 170px;
   font-size: 40px;
   line-height: 40px;
 }

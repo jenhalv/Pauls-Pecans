@@ -1,0 +1,16 @@
+mat-card {
+  box-shadow: none;
+  background-color: transparent;
+  border-radius: 0px;
+  text-align: center;
+  max-width: 420px;
+  margin: auto;
+}
+
+mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+mat-card-content {
+  font-size: 15px;
+}
