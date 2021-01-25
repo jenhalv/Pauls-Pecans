@@ -96,7 +96,7 @@ const ANGULAR_MATERIAL_MODULES = [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(environment),
+    AngularFireModule.initializeApp(environment.firebaseConfig, 'paulspecans'),
     AngularFireAuthModule,
     AngularFireMessagingModule,
     AngularFireStorageModule,

@@ -1,5 +1,14 @@
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: fixed;
+}
+
 mat-toolbar {
-  max-height: 55px;
+  height: 55px;
   width: 100%;
   background-color: #204638;
   align-items: center;
@@ -8,10 +17,11 @@ mat-toolbar {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  z-index: 100;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+  // z-index: 100;
+  // position: -webkit-sticky; /* Safari */
+  // position: sticky
+  // position: fixed;
+  // top: 0;
 }
 
 .mat-toolbar-row, .mat-toolbar-single-row {
