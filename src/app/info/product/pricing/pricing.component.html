@@ -1,7 +1,46 @@
-<div class="card-container">
-<!-- <mat-card> -->
-  <app-pricing-card></app-pricing-card>
-</div>
+<mat-card-title>PRICING</mat-card-title>
+<mat-card-footer>** Pricing & availability subject to change. **</mat-card-footer>
 
-  <!-- <img mat-card-image class="jar" src="/assets/Images/shipping_pecans.jpg" alt="Jar of pecans"/>
-</mat-card> -->
+<mat-grid-list class="grid-title" cols = "4" rowHeight = "30px">
+<mat-grid-tile class="grid-title1"
+[colspan] = "1"
+[rowspan] = "1">POUNDS
+</mat-grid-tile>
+
+<mat-grid-tile class="grid-title1"
+[colspan] = "1"
+[rowspan] = "1">PRICE
+</mat-grid-tile>
+
+<mat-grid-tile class="grid-title1"
+[colspan] = "1"
+[rowspan] = "1">S&H
+</mat-grid-tile>
+
+<mat-grid-tile class="grid-title2"
+[colspan] = "1"
+[rowspan] = "1">TOTAL
+</mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list class="grid-text" cols = "4" rowHeight = "30px" *ngFor="let price of PRICE">
+<mat-grid-tile class="grid-text1"
+[colspan] = "1"
+[rowspan] = "1">{{price.pounds}}
+</mat-grid-tile>
+
+<mat-grid-tile class="grid-text1"
+[colspan] = "1"
+[rowspan] = "1">{{price.price}}
+</mat-grid-tile>
+
+<mat-grid-tile class="grid-text1"
+[colspan] = "1"
+[rowspan] = "1">{{price.shipping}}
+</mat-grid-tile>
+
+<mat-grid-tile  class="grid-text2"
+[colspan] = "1"
+[rowspan] = "1" >{{price.total}}
+</mat-grid-tile>
+</mat-grid-list>
