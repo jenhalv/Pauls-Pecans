@@ -51,7 +51,6 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductInfoComponent } from './info/product/product-info/product-info.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
-import { PricingCardComponent } from './info/product/pricing/pricing-card/pricing-card.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -89,8 +88,7 @@ const ANGULAR_MATERIAL_MODULES = [
     OrderHeaderComponent,
     ToolbarComponent,
     SidenavComponent,
-    ProductInfoComponent,
-    PricingCardComponent
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,

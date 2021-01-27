@@ -23,51 +23,68 @@ h1 {
   border-bottom: 5px solid black;
 }
 
-.mat-card-subtitle {
-  margin-bottom: 6px;
-  }
+.mat-card-title {
+  font-size: 20px;
+}
+.payments {
+  display: block;
+}
 
 .payments1 {
   display: flex;
-  padding: 0px 30px 30px 30px;
 }
-
 .payments2 {
   display: flex;
   padding: 0px 70px 30px 0px;
 }
 
-.paypal-pic {
-  width: 70px;
-  height: auto;
-  padding: 0px;
-}
-
 .mat-card {
-  box-shadow: none;
+  // box-shadow: none;
   border-radius: 0px;
-  display: flex;
   background-color: transparent;
 }
 
+.mat-card>:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
+  align-items: center;
+}
+
+.paypal {
+  margin: 0px -15px -20px -15px;
+}
+
+.cash {
+  margin-left: -15px;
+}
+
+.mat-card-content>:first-child {
+  display: flex;
+  align-items: center;
+}
+
 .mat-card-header .mat-card-subtitle:not(:first-child) {
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
-.mat-card:not([class*=mat-elevation-z]) {
-  box-shadow: none;
+.mat-card-header .mat-card-title {
+  margin-bottom: 8px;
 }
-
 .text1 {
-  margin: 6px 0px 3px -10px;
+  margin-right: 5px;
 }
 
 .text2 {
-  margin: 0px -10px;
+  text-align: left;
+  margin: 0px 0px 0px 5px;
 }
 
 .text3 {
-  margin: 5px -10px;
+  margin-bottom: 0px;
+  margin-left: 5px;
 }
 
 .text4 {
@@ -81,19 +98,19 @@ a {
 
 /* Responsive Styles */
 @media only screen and (max-width: 290px) {
-  .payments1 {
+  .mat-card>:first-child {
     display: block;
+    justify-content: center;
   }
   .payments2 {
     display: block;
   }
+  .fa-cc-paypal {
+    padding-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-  .payments1 {
-    padding: 0px 10px 30px 10px;
-  }
-
   .payments2 {
     padding: 0px 20px 30px 0px;
   }
