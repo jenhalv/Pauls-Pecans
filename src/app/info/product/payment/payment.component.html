@@ -1,18 +1,10 @@
 <h1>$$&nbsp;&nbsp;Payment Options&nbsp;&nbsp;$$</h1>
 
-<div class="payment-pics">
+<div class="card-container">
 
-  <mat-card class="payments">
+  <div>
 
-    <mat-card>
-      <a target="_blank" href="https://www.paypal.com">
-        <mat-card-header class="paypal">
-          <mat-card-title class="text1">Find me on PayPal:</mat-card-title>
-          <mat-card-subtitle>jenhalv06@gmail.com</mat-card-subtitle>
-        </mat-card-header>
-        <i class="fa fa-cc-paypal fa-3x" aria-hidden="true" alt="paypal"></i>
-      </a>
-    </mat-card>
+<app-paypal></app-paypal>
 
     <mat-card class="payments1">
         <i class="fa fa-money fa-3x" aria-hidden="true" alt="cash"></i>
@@ -22,18 +14,10 @@
         </mat-card-header>
     </mat-card>
 
-  </mat-card>
+  </div>
+
+  <app-mail></app-mail>
 
 
-  <mat-card class="payments2">
-    <mat-card-header>
-      <mat-card-title class="text3">Mail a check to:</mat-card-title>
-      <mat-card-subtitle class="text4">Jennifer Halvorson<br>
-          568 SW CO RD 7508<br>
-          Rich Hill, MO 64779
-      </mat-card-subtitle>
-    </mat-card-header>
-    <mat-icon fontSet="material-icons-outlined">markunread_mailbox</mat-icon>
-  </mat-card>
 
 </div>

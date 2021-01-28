@@ -1,0 +1,33 @@
+.mat-card {
+  box-shadow: none;
+  border-radius: 0px;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mat-card-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.mat-card-title {
+  margin: 2px 0px 6px 0px;
+  text-align: right;
+}
+
+.mat-card-subtitle {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.mat-icon {
+  height: 53px;
+  width: 53px;
+}
+
+@media only screen and (max-width: 260px) {
+  .mat-card {
+    padding: 0px;
+  }
+}

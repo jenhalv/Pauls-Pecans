@@ -1,0 +1,23 @@
+.mat-card {
+  flex-wrap: wrap;
+}
+
+.mat-card-header {
+  margin: 0px -15px -20px -15px;
+  text-align: center;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 320px) {
+  .fa-cc-paypal {
+    padding: 10px 75px 0px 75px;
+  }
+}
