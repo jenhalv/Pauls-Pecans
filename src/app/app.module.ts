@@ -56,6 +56,7 @@ import { PaypalComponent } from './info/product/payment/paypal/paypal.component'
 import { CashComponent } from './info/product/payment/cash/cash.component';
 import { TextComponent } from './contact/contact-info/text/text.component';
 import { EmailComponent } from './contact/contact-info/email/email.component';
+import { PersonalContactComponent } from './contact/personal-contact/personal-contact.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -98,7 +99,8 @@ const ANGULAR_MATERIAL_MODULES = [
     PaypalComponent,
     CashComponent,
     TextComponent,
-    EmailComponent
+    EmailComponent,
+    PersonalContactComponent
   ],
   imports: [
     BrowserModule,
