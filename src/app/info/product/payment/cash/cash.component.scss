@@ -1,0 +1,30 @@
+.mat-card {
+  flex-wrap: wrap-reverse;
+  box-shadow: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+.mat-card-header {
+  text-align: center;
+}
+
+.mat-card-header .mat-card-title {
+  margin-bottom: 6px;
+  margin-top: 3px;
+}
+
+.mat-card-header .mat-card-subtitle {
+  margin-bottom: 0px;
+}
+
+.fa-money {
+  margin: 5px -12px 5px 15px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 296px) {
+  .fa-money {
+    margin: 0px;
+  }
+}

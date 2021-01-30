@@ -1,5 +1,6 @@
 .card-container {
   background-color: #58504e;
+  align-items: stretch;
 }
 
 .card {
@@ -11,6 +12,7 @@
   box-shadow: 0px;
   color: #ece4df;
   display: block;
+  text-align: center;
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
@@ -27,7 +29,6 @@
   font-size: 16px;
   padding-top: 5px;
   color: #ece4df;
-
 }
 
 .project-card {
@@ -42,6 +43,7 @@
   margin-bottom: 15px;
   font-weight: 500;
   text-shadow: .5px .5px grey;
+  text-align: center;
 }
 
 .recipe-subtitle {

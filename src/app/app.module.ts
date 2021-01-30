@@ -54,6 +54,8 @@ import { SidenavComponent } from './toolbar/sidenav/sidenav.component';
 import { MailComponent } from './info/product/payment/mail/mail.component';
 import { PaypalComponent } from './info/product/payment/paypal/paypal.component';
 import { CashComponent } from './info/product/payment/cash/cash.component';
+import { TextComponent } from './contact/contact-info/text/text.component';
+import { EmailComponent } from './contact/contact-info/email/email.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -94,7 +96,9 @@ const ANGULAR_MATERIAL_MODULES = [
     ProductInfoComponent,
     MailComponent,
     PaypalComponent,
-    CashComponent
+    CashComponent,
+    TextComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule,

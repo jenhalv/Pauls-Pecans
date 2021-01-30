@@ -3,7 +3,7 @@
 <form id="contactForm" [formGroup]="contactForm">
     <!-- <form id="contactForm" #contactForm="ngForm"> -->
   <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
-    <mat-label for="name"><i class="fa fa-user"></i>Name</mat-label>
+    <mat-label for="name"><i class="fa fa-user" aria-hidden="true" alt="user"></i>Name</mat-label>
       <input
         matInput
         id="name"
@@ -15,7 +15,7 @@
   </mat-form-field>
 
   <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
-    <mat-label for="email"><i class="fa fa-envelope"></i>Email</mat-label>
+    <mat-label for="email"><i class="fa fa-envelope" aria-hidden="true" alt="envelope"></i>Email</mat-label>
       <input
         matInput
         id="email"
@@ -29,7 +29,7 @@
   </mat-form-field>
 
    <mat-form-field appearance="fill">
-    <mat-label><i class="fa fa-pencil fa-flip-horizontal"></i>Message</mat-label>
+    <mat-label><i class="fa fa-pencil fa-flip-horizontal" aria-hidden="true" alt="pencil"></i>Message</mat-label>
           <textarea
           matInput
           id="message"

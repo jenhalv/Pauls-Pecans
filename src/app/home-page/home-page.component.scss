@@ -1,13 +1,23 @@
 .content {
-  background-color: #ebe3de;
-  width: 100%;
-  height: auto;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0px;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+background-color: #ece4df;
 }
+
+.mat-card {
+  // background: rgb(#ece4df,.7);
+  // border-radius: 0px;
+  // box-shadow: none;
+  margin: 0px 10px 15px 10px;
+  max-width: 450px;
+}
+
+.mat-button {
+  // background-color: pink;
+  font-size: 14px;
+  border: black solid 1px;
+  margin: 15px;
+}
+// .mat-card-title {
+//   padding-top: 15px;
+//   font-size: 25px;
+//   line-height: 29px;
+// }

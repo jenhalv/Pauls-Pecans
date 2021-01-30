@@ -6,6 +6,7 @@ import { ProductComponent } from './info/product/product.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 import { ContactComponent } from './contact/contact.component';
+import { PaymentComponent } from './info/product/payment/payment.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+    {
+    path: 'payment',
+    component: PaymentComponent
   },
   {
     path: '',
