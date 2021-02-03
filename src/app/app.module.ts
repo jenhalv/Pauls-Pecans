@@ -57,6 +57,8 @@ import { CashComponent } from './info/product/payment/cash/cash.component';
 import { TextComponent } from './contact/contact-info/text/text.component';
 import { EmailComponent } from './contact/contact-info/email/email.component';
 import { PersonalContactComponent } from './contact/personal-contact/personal-contact.component';
+import { FeaturedArticlesComponent } from './info/about-pecans/featured-articles/featured-articles.component';
+import { MdcComponent } from './info/about-pecans/featured-articles/mdc/mdc.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -100,7 +102,9 @@ const ANGULAR_MATERIAL_MODULES = [
     CashComponent,
     TextComponent,
     EmailComponent,
-    PersonalContactComponent
+    PersonalContactComponent,
+    FeaturedArticlesComponent,
+    MdcComponent
   ],
   imports: [
     BrowserModule,

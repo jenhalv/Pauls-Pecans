@@ -3,20 +3,23 @@
 }
 
 .mat-card {
-  background: none;
-  max-width: 855px;
+  background: transparent;
   height: auto;
   box-shadow: none;
   color: #58504e;
-  padding-bottom: 15px;
 }
 
 mat-card-title {
   font-size: 40px;
   line-height: 40px;
+  margin-top: 10px;
+}
+.mat-card-title:not(:first-child) {
+  margin-top: 40px;
 }
 
 .mat-card-subtitle {
+  max-width: 1000px;
   line-height: 20px;
   font-size: 17px;
   padding: 10px;
