@@ -1,26 +1,24 @@
 .card-container {
   margin-top: 35px;
+  display: block;
 }
 
 .mat-card {
   background: transparent;
-  height: auto;
+  // height: auto;
   box-shadow: none;
+  border-radius: 0px;
   color: #58504e;
+  justify-content: center;
+  margin-top: 65px;
 }
 
-mat-card-title {
-  font-size: 40px;
-  line-height: 40px;
-  margin-top: 10px;
-}
-.mat-card-title:not(:first-child) {
-  margin-top: 40px;
+.mat-card-title {
+  font-size: 32px;
 }
 
 .mat-card-subtitle {
-  max-width: 1000px;
-  line-height: 20px;
+  max-width: 900px;
   font-size: 17px;
   padding: 10px;
 }
