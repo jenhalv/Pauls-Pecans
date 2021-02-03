@@ -5,6 +5,10 @@
   display: flex;
 }
 
+a:hover {
+  opacity: 0.7;
+}
+
 .mat-card-title {
   line-height: 24px;
 }

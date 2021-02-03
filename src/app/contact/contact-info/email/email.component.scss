@@ -5,10 +5,6 @@
   display: flex;
 }
 
-// .mat-card-title {
-//   margin-top: 10px;
-// }
-
 .mat-card-subtitle {
   margin-bottom: 0px;
 }
@@ -21,6 +17,10 @@
 }
 
 .fa:hover {
+  opacity: 0.7;
+}
+
+.mat-card:hover {
   opacity: 0.7;
 }
 
