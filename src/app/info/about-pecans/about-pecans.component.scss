@@ -1,13 +1,18 @@
-.card-container {
-  display: block;
+.about {
+  background-color: #ece4df;
+  width: 100%;
 }
 
-.mat-card {
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0px;
+.stay-tuned {
   color: #58504e;
-  margin: 45px 15px 15px 15px;
+  padding: 55px 10px 10px 10px;
+}
+
+.card-container {
+  padding-bottom: 25px;
+  max-width: 850px;
+  justify-content: space-around;
+  background-color: #ece4df;
 }
 
 .mat-card-title {

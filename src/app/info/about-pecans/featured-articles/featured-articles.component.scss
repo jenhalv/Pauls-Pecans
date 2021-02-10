@@ -1,14 +1,15 @@
 .card-container {
-  margin-top: 35px;
+  display: block;
 }
 
 .mat-card {
-  background: transparent;
+  background: #ece4df;
   height: auto;
+  text-align: center;
   box-shadow: none;
   color: #58504e;
   justify-content: center;
-  margin-top: 25px;
+  padding: 25px 5px;
 }
 
 .mat-card-title {
