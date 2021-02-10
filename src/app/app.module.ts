@@ -60,6 +60,7 @@ import { PersonalContactComponent } from './contact/personal-contact/personal-co
 import { FeaturedArticlesComponent } from './info/about-pecans/featured-articles/featured-articles.component';
 import { MdcComponent } from './info/about-pecans/featured-articles/mdc/mdc.component';
 import { WwComponent } from './info/about-pecans/featured-articles/ww/ww.component';
+import { TimelineComponent } from './info/about-pecans/timeline/timeline.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -106,7 +107,8 @@ const ANGULAR_MATERIAL_MODULES = [
     PersonalContactComponent,
     FeaturedArticlesComponent,
     MdcComponent,
-    WwComponent
+    WwComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

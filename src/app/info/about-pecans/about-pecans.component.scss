@@ -1,16 +1,13 @@
 .card-container {
-  margin-top: 35px;
   display: block;
 }
 
 .mat-card {
   background: transparent;
-  // height: auto;
   box-shadow: none;
   border-radius: 0px;
   color: #58504e;
-  justify-content: center;
-  margin-top: 65px;
+  margin: 45px 15px 15px 15px;
 }
 
 .mat-card-title {
@@ -18,7 +15,7 @@
 }
 
 .mat-card-subtitle {
-  max-width: 900px;
   font-size: 17px;
   padding: 10px;
+  border-bottom: 3px solid #58504e;
 }
