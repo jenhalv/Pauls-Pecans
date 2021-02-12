@@ -5,23 +5,12 @@
 .graft {
   max-width: 400px;
   margin: 0px 15px 10px 15px;
-  padding: 5px;
-  color: #eeeeee;
+  padding: 10px;
+  color: #ece4df;
   background-color: #58504e;
   border: 5px solid #ece4df;
   border-radius: 0px;
   box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
-}
-
-.mat-card-title {
-  font-size: 21px;
-  text-align: left;
-  line-height: 20px;
-}
-
-.mat-card-subtitle {
-  color: #eeeeee;
-  text-align: left;
 }
 
 .image-box {
@@ -44,11 +33,10 @@
 //List of items
 ul {
   list-style: none;
-  line-height: 20px;
-  text-align: left;
-  margin: 0px;
   padding-inline-start: 10px;
   column-count: 2;
+  column-gap: 50px;
+  padding-right: 10px;
 }
 
 //Colored Checkmarks
@@ -58,7 +46,13 @@ ul li:before {
   padding-right: 5px;
 }
 
-@media only screen and (max-width: 379px) {
+@media only screen and (max-width: 399px) {
+  ul {
+    padding-right: 0px;
+  }
+  }
+
+@media only screen and (max-width: 386px) {
   ul {
     column-count: 1;
   }

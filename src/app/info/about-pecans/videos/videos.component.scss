@@ -1,16 +1,26 @@
-youtube-player {
-  width: 575px;
-  height: auto;
+.card-container {
+  margin-top: 65px;
 }
-.video {
-  max-width: 200px;
+
+// .you-tube {
+//   height: 250;
+//   width: 500;
+// }
+
+h2 {
+  padding: 10px 20px;
+  font-size: 17px;
+  line-height: 20px;
+  flex-wrap: wrap;
+  max-width: 1150px;
   height: auto;
+  margin-bottom: 0px;
 }
-.example-card {
-  max-width: 600px;
-  height: auto;
-}
-.example-header-image {
-  background-image: url('https://www.youtube.com/watch?v=Naok1-Ec7OU');
-  background-size: cover;
+
+.demo-video-selection {
+  margin-bottom: 20px;
+
+  .mat-radio-button {
+    margin: 8px;
+  }
 }

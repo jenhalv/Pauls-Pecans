@@ -7,6 +7,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 import { ContactComponent } from './contact/contact.component';
 import { PaymentComponent } from './info/product/payment/payment.component';
+import { VideosComponent } from './info/about-pecans/videos/videos.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
     {
     path: 'payment',
     component: PaymentComponent
+  },
+  {
+    path: 'video',
+    component: VideosComponent
   },
   {
     path: '',

@@ -61,6 +61,7 @@ import { FeaturedArticlesComponent } from './info/about-pecans/featured-articles
 import { MdcComponent } from './info/about-pecans/featured-articles/mdc/mdc.component';
 import { WwComponent } from './info/about-pecans/featured-articles/ww/ww.component';
 import { TimelineComponent } from './info/about-pecans/timeline/timeline.component';
+import { ToolListComponent } from './info/about-pecans/kit/tool-list/tool-list.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -108,7 +109,8 @@ const ANGULAR_MATERIAL_MODULES = [
     FeaturedArticlesComponent,
     MdcComponent,
     WwComponent,
-    TimelineComponent
+    TimelineComponent,
+    ToolListComponent
   ],
   imports: [
     BrowserModule,
