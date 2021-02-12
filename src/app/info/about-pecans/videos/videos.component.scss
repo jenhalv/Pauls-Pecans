@@ -1,26 +1,46 @@
 .card-container {
   margin-top: 65px;
+  // max-width: 700px;
 }
-
-// .you-tube {
-//   height: 250;
-//   width: 500;
-// }
 
 h2 {
-  padding: 10px 20px;
-  font-size: 17px;
-  line-height: 20px;
-  flex-wrap: wrap;
-  max-width: 1150px;
-  height: auto;
-  margin-bottom: 0px;
+  line-height: 25px;
+  max-width: 600px;
+  text-align: center;
 }
 
-.demo-video-selection {
-  margin-bottom: 20px;
-
-  .mat-radio-button {
-    margin: 8px;
-  }
+.mat-icon {
+  line-height: 1.2;
+  vertical-align: text-bottom;
+  height: 25px;
+  width: 40px;
 }
+
+.html5-video-player {
+  position: fixed !important;;
+  width: 50% !important;;
+  height: 50% !important;;
+}
+
+// .ytp-large-play-button {
+//   width: 108px;
+//   height: 85px;
+// }
+
+// #videoId{
+//   height: 200px;
+//   width: 120px;
+//   border: 1px black solid;
+//   }
+
+// @media only screen and (max-width: 639px) {
+//   iframe {
+//     width: 550px;
+//     height: 350px;
+//   }
+
+//   .video {
+//     width: 320px;
+//     height: 195px;
+//   }
+// }
