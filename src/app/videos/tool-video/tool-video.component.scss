@@ -1,0 +1,47 @@
+.flex-item {
+  width: 100%;
+  max-width: 60vmax;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+h3 {
+  line-height: 22px;
+  max-width: 475px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mat-icon {
+  line-height: 1.2;
+  vertical-align: text-bottom;
+  height: 25px;
+  width: 40px;
+}
+
+.mat-card {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 21px;
+  padding-bottom: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.codegena {
+  position: relative;
+  padding-bottom: 56.27198%;
+}
+
+.codegena iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(360deg,  #58504e, #ece4df);
+  height: 100%;
+  padding: 10px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+}

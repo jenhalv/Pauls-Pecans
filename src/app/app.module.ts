@@ -40,7 +40,6 @@ import { TraditionComponent } from './info/tradition/tradition.component';
 
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
 import { KitComponent } from './info/about-pecans/kit/kit.component';
-import { VideosComponent } from './info/about-pecans/videos/videos.component';
 
 import { ContactComponent } from './contact/contact.component';
 import { OrderHeaderComponent } from './contact/order-header/order-header.component';
@@ -62,6 +61,9 @@ import { MdcComponent } from './info/about-pecans/featured-articles/mdc/mdc.comp
 import { WwComponent } from './info/about-pecans/featured-articles/ww/ww.component';
 import { TimelineComponent } from './info/about-pecans/timeline/timeline.component';
 import { ToolListComponent } from './info/about-pecans/kit/tool-list/tool-list.component';
+import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
+import { ToolVideoComponent } from './videos/tool-video/tool-video.component';
+import { VideosComponent } from './videos/videos.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -110,7 +112,9 @@ const ANGULAR_MATERIAL_MODULES = [
     MdcComponent,
     WwComponent,
     TimelineComponent,
-    ToolListComponent
+    ToolListComponent,
+    ImageGalleryComponent,
+    ToolVideoComponent
   ],
   imports: [
     BrowserModule,

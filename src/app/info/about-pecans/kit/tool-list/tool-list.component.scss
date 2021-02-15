@@ -1,20 +1,15 @@
 .mat-card {
   box-shadow: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding: 1px;
   background: none;
 }
 
 .mat-card-title {
-  margin-bottom: 0px;
-  font-size: 20px;
-}
-
-.mat-card-subtitle {
-  max-width: 270px;
-  margin: 10px 0px;
+  max-width: 310px;
+  // margin: 10px 0px;
   color: #ece4df;
 }
 
