@@ -3,11 +3,11 @@
 }
 
 .image-box {
-  background: transparent;
   border-radius: 0px;
   box-shadow: none;
   text-align: center;
-  margin: auto;
+  margin: 0px;
+  padding: 0px;
 }
 
 .mat-card-image:first-child {
@@ -20,20 +20,17 @@
 }
 
 .StepProgress {
-position: relative;
-padding-left: 45px;
-list-style: none;
+  position: relative;
+  padding-left: 45px;
+  list-style: none;
 }
 
 .StepProgress::before {
-display: inline-block;
-content: '';
-position: absolute;
-// top: 0;
-left: 15px;
-// width: 10px;
-height: 110%;
-border-left: 2px solid #CCC;
+  content: '';
+  position: absolute;
+  left: 15px;
+  height: 100%;
+  border-left: 2px solid #CCC;
 }
 
 .StepProgress-item {
@@ -45,7 +42,6 @@ padding-bottom: 20px;
 }
 
 .StepProgress-item::before {
-display: inline-block;
 content: '';
 position: absolute;
 left: -30px;
@@ -55,7 +51,6 @@ width: 10px;
 
 .StepProgress-item::after {
 content: '';
-display: inline-block;
 position: absolute;
 top: 0;
 left: -37px;
@@ -66,26 +61,15 @@ border-radius: 50%;
 background-color: #FFF;
 }
 
-.StepProgress-item.is-done::before {
-border-left: 2px solid #58504e;
+//line @current month
+.StepProgress-item.current::before {
+  border-left: 2px solid #58504e;
 }
 
-.StepProgress-item.is-done::after {
-/*content: "?";*/
-font-size: 10px;
-color: #FFF;
-text-align: center;
-border: 2px solid #58504e;
-background-color: #58504e;
+//circle @current month
+.StepProgress-item.current::after {
+  background-color: #58504e;
 }
-
-.StepProgress strong {
-display: block;
-}
-
-
-
-
 
 // TIMELINE
 
@@ -98,7 +82,6 @@ h1 {
 }
 
 .timeline-content {
-  // width: 95%;
   color: #58504e;
 }
 
@@ -120,7 +103,6 @@ h1 {
   word-spacing: 1px;
   color: #888;
 }
-
 
 @media screen and (max-width: 768px) {
   .container:before {

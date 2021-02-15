@@ -1,22 +1,20 @@
-.card-container {
-  margin-top: 45px;
+.page {
+  display: block;
 }
 
-mat-card {
+.mat-card {
   margin: 10px;
   max-width: 355px;
   height: auto;
   border-radius: 0px;
 }
 
-mat-card-content {
-  padding: 10px 20px;
+.info {
+  margin: auto;
+  background: none;
+  box-shadow: none;
   font-size: 17px;
-  line-height: 20px;
-  flex-wrap: wrap;
-  max-width: 1150px;
-  height: auto;
-  margin-bottom: 0px;
+  max-width: 1170px;
 }
 
 .mat-card-image {
@@ -32,7 +30,7 @@ mat-card-content {
   margin-top: 0px;
 }
 
-mat-card-footer {
+.mat-card-footer {
   text-align: center;
   padding: 7px 0px;
 }
