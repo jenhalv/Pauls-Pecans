@@ -3,21 +3,7 @@
 }
 
 .mat-card {
-  background: #ece4df;
-  height: auto;
-  text-align: center;
-  box-shadow: none;
+  max-width: 608px;
   color: #58504e;
-  justify-content: center;
-  padding: 25px 5px;
+  margin: 10px 7px;
 }
-
-.mat-card-title {
-  font-size: 32px;
-}
-
-// .mat-card-subtitle {
-//   max-width: 1100px;
-//   font-size: 17px;
-//   padding: 10px;
-// }

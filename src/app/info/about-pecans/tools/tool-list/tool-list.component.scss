@@ -1,0 +1,77 @@
+.list {
+  max-width: 450px;
+  margin: 35px auto -95px auto;
+  color: #ece4df;
+  background-color: #58504e;
+  border: 5px solid #ece4df;
+  border-radius: 0px;
+  box-shadow: 1px 1px 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px 0px 10px 8px;
+  // position: absolute;
+  z-index: 500;
+}
+
+.box {
+  margin: 0px;
+  padding: 0px 1px 0px 32px;
+  box-shadow: none;
+  background: none;
+  color: #ece4df;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  column-count: 2;
+  column-gap: 0px;
+}
+
+ul li:before {
+  content: '✓';
+  padding-right: 5px;
+}
+
+.mat-icon {
+  font-size: 30px;
+  line-height: 1;
+  color: #ece4df;
+  vertical-align: text-top;
+  width: 50px;
+}
+
+.mat-card-actions {
+  padding: 0px 15px 0px 0px;
+}
+
+.mat-card>.mat-card-actions:last-child {
+  margin-bottom: 0px;
+}
+
+.mat-icon:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    padding: 0px 1px 0px 16px;
+  }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .box {
+      padding: 0px 1px 0px 8px;
+    }
+    }
+
+    @media only screen and (max-width: 385px) {
+      .box {
+        padding: 0px 2px 0px 2px;
+      }
+      }
+
+@media only screen and (max-width: 375px) {
+  ul {
+    column-count: 1;
+  }
+  }

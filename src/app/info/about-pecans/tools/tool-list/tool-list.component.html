@@ -1,0 +1,50 @@
+<mat-card class="list">
+    <h3>Paul recommends these items:</h3>
+
+    <mat-card class="box">
+     <ul>
+            <li>Tool box</li>
+            <li>1 ¼" nails</li>
+            <li>Pruners</li>
+            <li>Hammer</li>
+            <li>Flagging</li>
+            <li>Cloth ties</li>
+            <li>Graft wood</li>
+            <li>Pocket knife</li>
+            <li>Wood lathes</li>
+            <li>Masking tape</li>
+          </ul>
+            </mat-card>
+
+            <mat-card class="box">
+                <ul>
+            <li>Rubber bands</li>
+            <li>Aluminum foil</li>
+            <li>Electrical tape</li>
+            <li>Flair writing pen</li>
+            <li>Cooler & ice pack</li>
+            <li>Sandwich baggies</li>
+            <li>Bow saw/chainsaw</li>
+            <li>#18 x ⅝" wire nails</li>
+            <li>Glasses (if needed)</li>
+          </ul>
+          </mat-card>
+
+        <mat-card-actions align="end">
+
+          <mat-icon
+          [cdkCopyToClipboard]="value"
+          aria-label="Copy to clipboard"
+          alt="Copy to clipboard"
+          (click)="copyToClipboard()"
+          matTooltip="Click to copy">content_copy</mat-icon>
+
+          <a href="https://firebasestorage.googleapis.com/v0/b/paulspecans.appspot.com/o/Grafting%20Tool%20List.pdf?alt=media&token=bbc7b773-59aa-4ec4-b5cb-f12fd02ec58f">
+          <mat-icon aria-label="Click to print"
+          alt="Copy to print"
+          matTooltip="Click to print">print</mat-icon></a>
+
+
+        </mat-card-actions>
+
+  </mat-card>

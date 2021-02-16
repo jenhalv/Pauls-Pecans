@@ -26,6 +26,9 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './home-page/header/header.component';
@@ -39,7 +42,6 @@ import { PricingComponent } from './info/product/pricing/pricing.component';
 import { TraditionComponent } from './info/tradition/tradition.component';
 
 import { AboutPecansComponent } from './info/about-pecans/about-pecans.component';
-import { KitComponent } from './info/about-pecans/kit/kit.component';
 
 import { ContactComponent } from './contact/contact.component';
 import { OrderHeaderComponent } from './contact/order-header/order-header.component';
@@ -60,10 +62,11 @@ import { FeaturedArticlesComponent } from './info/about-pecans/featured-articles
 import { MdcComponent } from './info/about-pecans/featured-articles/mdc/mdc.component';
 import { WwComponent } from './info/about-pecans/featured-articles/ww/ww.component';
 import { TimelineComponent } from './info/about-pecans/timeline/timeline.component';
-import { ToolListComponent } from './info/about-pecans/kit/tool-list/tool-list.component';
 import { ImageGalleryComponent } from './image-gallery/image-gallery.component';
 import { ToolVideoComponent } from './videos/tool-video/tool-video.component';
 import { VideosComponent } from './videos/videos.component';
+import { ToolsComponent } from './info/about-pecans/tools/tools.component';
+import { ToolListComponent } from './info/about-pecans/tools/tool-list/tool-list.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -77,6 +80,8 @@ const ANGULAR_MATERIAL_MODULES = [
   MatButtonModule,
   MatGridListModule,
   MatExpansionModule,
+  MatTooltipModule,
+  MatSnackBarModule,
   MatDividerModule
 ];
 
@@ -94,7 +99,6 @@ const ANGULAR_MATERIAL_MODULES = [
     PricingComponent,
     PaymentComponent,
     ContactComponent,
-    KitComponent,
     VideosComponent,
     ContactFormComponent,
     ContactInfoComponent,
@@ -112,9 +116,10 @@ const ANGULAR_MATERIAL_MODULES = [
     MdcComponent,
     WwComponent,
     TimelineComponent,
-    ToolListComponent,
     ImageGalleryComponent,
-    ToolVideoComponent
+    ToolVideoComponent,
+    ToolsComponent,
+    ToolListComponent
   ],
   imports: [
     BrowserModule,
@@ -129,6 +134,7 @@ const ANGULAR_MATERIAL_MODULES = [
     FlexLayoutModule,
     MatSidenavModule,
     YouTubePlayerModule,
+    ClipboardModule,
     ANGULAR_MATERIAL_MODULES
   ],
   providers: [AngularFirestore],
