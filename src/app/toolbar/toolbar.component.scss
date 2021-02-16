@@ -27,7 +27,21 @@ mat-toolbar {
 
 a {
   text-decoration: none;
+}
+
+.navigation:hover {
+  background-color: #58504e;
   cursor: pointer;
+}
+
+.navigation:focus {
+  background-color: #58504e;
+  cursor: context-menu;
+}
+
+a.active {
+  background-color: #58504e;
+  cursor: context-menu;
 }
 
 .header {
@@ -35,6 +49,7 @@ a {
   font-size: 30px;
   font-weight: 300;
   margin: 0px 5px 0px 0px;
+  padding: 5px;
 }
 
 .mat-icon {
@@ -68,6 +83,7 @@ mat-menu-content ng-tns-c83-0 {
   text-align: center;
   font-size: 25px;
   font-weight: 300;
+  padding: 5px;
 }
 
 .home {
@@ -77,6 +93,7 @@ mat-menu-content ng-tns-c83-0 {
   height: 28px;
   line-height: 30px;
   vertical-align: text-bottom;
+  padding: 5px;
 }
 
 .spacer {
