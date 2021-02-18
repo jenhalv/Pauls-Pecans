@@ -8,6 +8,7 @@ import { AboutPecansComponent } from './info/about-pecans/about-pecans.component
 import { ContactComponent } from './contact/contact.component';
 import { PaymentComponent } from './info/product/payment/payment.component';
 import { VideosComponent } from './videos/videos.component';
+import { DashComponent } from './dash/dash.component';
 
 const routes: Routes = [
   {
@@ -35,9 +36,23 @@ const routes: Routes = [
     component: VideosComponent
   },
   {
+    path: 'home',
+    pathMatch : 'full',
+    redirectTo: ''
+},
+{
     path: '',
     component: HomePageComponent
-  },
+},
+{
+    path: 'dashboard',
+    component: DashComponent
+}
+
+  // {
+  //   path: '',
+  //   component: HomePageComponent
+  // },
 ];
 
 @NgModule({
