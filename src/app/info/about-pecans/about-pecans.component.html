@@ -2,10 +2,89 @@
 
 <div class="card-container">
 
+  <mat-card>
   <app-timeline></app-timeline>
+
+  <div class="rectangle">Coming soon</div>
+  <app-featured-articles></app-featured-articles>
+  
+</mat-card>
 
   <app-tools></app-tools>
 
-  <app-featured-articles></app-featured-articles>
+  <!-- <div class="grid-container">
+
+      <main class="main">
+        <div class="main-overview">
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card1</div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card2</div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card3</div>
+          </div>
+          <div class="overviewcard">
+            <div class="overviewcard__icon">Overview</div>
+            <div class="overviewcard__info">Card4</div>
+          </div>
+        </div>
+
+        <div class="main-cards">
+          <div class="card">CardA</div>
+          <div class="card">CardB</div>
+          <div class="card">CardC</div>
+        </div>
+      </main> -->
+
+  <!-- <app-featured-articles></app-featured-articles> -->
 </div>
+
+
+	<!-- <div class="box-wrapper">
+		<div id="box1">
+			<div id="box4">
+          <app-timeline></app-timeline>
+			</div>
+			<div class="middle-column">
+				<div id="box5">
+          <app-timeline></app-timeline>
+				</div>
+				<div id="box6">
+					GeeksforGeeks 6
+				</div>
+				<div id="box7">
+					GeeksforGeeks 7
+				</div>
+			</div>
+			<div id="box8">
+				GeeksforGeeks 8
+			</div>
+		</div>
+	</div> -->
+
+<!--
+<div class="grid-container">
+    <h1 class="mat-h1">Dashboard</h1>
+    <mat-grid-list cols="2">
+      <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+        <mat-card class="dashboard-card">
+          <mat-card-header>
+            <mat-card-title>
+              {{card.title}}
+
+           </mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="dashboard-card-content">
+              <app-timeline></app-timeline>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div> -->
+
 </div>

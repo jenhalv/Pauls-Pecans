@@ -7,27 +7,31 @@
 
 <!-- DESKTOP VIEW -->
 
-<button fxShow="true" fxHide.lt-md="true" mat-icon-button routerLink="" alt="home page" aria-label="home page">
-    <mat-icon class="home">home</mat-icon></button>
+  <a routerLink="/home" routerLinkActive="home-page" class="home-page" [routerLinkActiveOptions]="{exact:true}">
 
-  <a routerLink="" class="header">Paul's Pecans</a>
+    <mat-icon fxShow="true" fxHide.lt-md="true" mat-icon-button alt="home page" aria-label="home page">home</mat-icon>
+
+    <p>Paul's Pecans</p>
+
+  </a>
+
 
     <span class="spacer"></span>
       <div fxShow="true" fxHide.lt-md="true">
 
-        <a class="navigation" routerLink="/about-pecans" routerLinkActive="active" aria-label="about page">
+        <a class="navigation" routerLink="/about-pecans" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="about page">
           <span>About</span>
         </a>
 
-        <a class="navigation" routerLink="/product" routerLinkActive="active" aria-label="product page">
+        <a class="navigation" routerLink="/product" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="product page">
           <span>Product</span>
         </a>
 
-        <a class="navigation" routerLink="/tradition" routerLinkActive="active" aria-label="tradition page">
+        <a class="navigation" routerLink="/tradition" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="tradition page">
           <span>Tradition</span>
         </a>
 
-        <a class="navigation" routerLink="/contact" routerLinkActive="active" aria-label="contact page">
+        <a class="navigation" routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"aria-label="contact page">
           <span>Contact</span>
         </a>
 

@@ -3,7 +3,11 @@
 }
 
 .mat-card {
-  max-width: 608px;
+  z-index: 0;
+  max-width: 500px;
   color: #58504e;
-  margin: 40px 7px;
+  // margin: 40px 7px;
+  margin: 40px auto;
+  // display: flex;
+  column-gap: 25px;
 }

@@ -5,23 +5,23 @@
 
    <mat-menu class="matMenu" #menu="matMenu">
 
-  <button class="mat-menu-item" mat-menu-item routerLink="" alt="home page" aria-label="home page">
+  <button class="mat-menu-item" mat-menu-item routerLink="" alt="home page" aria-label="home page" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
     <mat-icon>home</mat-icon>
   </button>
 
-  <button mat-menu-item routerLink="/about-pecans" alt="about page" aria-label="about page">
+  <button mat-menu-item routerLink="/about-pecans" alt="about page" aria-label="about page" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}">
     <span class="menu-links">About</span>
   </button>
 
-  <button mat-menu-item routerLink="/product" alt="product page" aria-label="product page">
+  <button mat-menu-item routerLink="/product" alt="product page" aria-label="product page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
     <span class="menu-links">Product</span>
   </button>
 
-  <button mat-menu-item routerLink="/tradition" alt="tradition page" aria-label="tradition page">
+  <button mat-menu-item routerLink="/tradition" alt="tradition page" aria-label="tradition page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
     <span class="menu-links">Tradition</span>
   </button>
 
-  <button mat-menu-item routerLink="/contact" alt="contact page" aria-label="contact page">
+  <button mat-menu-item routerLink="/contact" alt="contact page" aria-label="contact page" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
     <span class="menu-links">Contact</span>
   </button>
 

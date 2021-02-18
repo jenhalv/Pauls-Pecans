@@ -1,0 +1,53 @@
+<mat-card *ngFor="let card of CARDS">
+
+    <mat-card-title>
+      <a href="https://nature.mdc.mo.gov/discover-nature/field-guide/pecan">
+        Pecan Field Guide</a>
+    </mat-card-title>
+
+    <mat-card-subtitle>
+      By: Paul Nelson<br>
+      <a href="https://mdc.mo.gov/conmag/2019-10/pecans">Discover Nature</a><br>
+      MO Dept of Conservation <br>
+    </mat-card-subtitle>
+
+  <img mat-card-image src="assets/Images/Pecan_Carya_illinoinensis.jpg" alt="pecan drawing" />
+
+<mat-card-content [class.article]="!this.card.collapsed">
+    Pecan
+    The pecan, a type of hickory, is one of Missouri’s favorite nut trees. Originally pecan had a fairly limited, southern distribution, but today it is found in and out of cultivation nearly statewide, owing to the popularity of the nuts.
+    Paul Nelson<br><br>
+
+
+<img mat-card-image src="assets/Images/About/MC1.jpg" alt="magazine pages 1 and 2" />
+
+<h2>GIRDLERS, SHUCKWORMS, AND WEEVILS</h2>
+Growing pecan nuts is not without its challenges. Missouri is at the northern edge of the native pecan range with frosts potentially damaging flowers in the spring and before the nuts have time to mature in the fall. In addition to competing with a variety of wildlife for the harvest, pecans are subject to pecan scab, a fungus that destroys the shucks, rendering the crop worthless.<br><br>
+<b>"The pecan gets all of its nutrients from the shuck and the shuck protects it," said Droz. "Scab is more prevalent in wet years, and in the river bottoms where you have much more humidity — not so much in the uplands where there’s a breeze."<br><br>
+Pecans are a favored food for a number of insects, including twig girdlers, hickory shuckworms, and pecan weevils.<br><br>
+"Insect damage can be significant," Droz said. "The pecan weevil is the biggest pest."<br><br>
+Pecan weevils are hard-shelled little beetles that puncture immature nuts to feed on developing kernels causing them to shrivel, turn black, and drop the nuts prematurely. Additionally, weevil larvae hatched from eggs laid within newly formed kernels feed on otherwise healthy nuts, only to be discovered after harvest.<br><br>
+"You’re going to lose the same amount of the crop no matter what its size. A small crop is no crop," Droz said. Mast years with large numbers of pecans overwhelm the ability of insect pests and animals to destroy seeds needed to reproduce new trees.</b><br><br>
+Wayne Lovelace, president of Forrest Keeling Nursery in Elsberry, said that pecans had been the native plant nursery’s number one specialty crop until being surpassed by pawpaws last year.<br><br>
+"The trend now is that people are getting more particular about what they eat and Missouri native plants like pecans, pawpaws, persimmons, and other nuts fit the trend," Lovelace said.<br><br>
+"Most of our work with pecans has been for conservation: reforestation, bottomland restoration, and for planting by communities and in parks," he said. "We start these market seedlings from native seed. Commercial orchard growers prefer grafted varieties."<br><br>
+Native pecan forests and groves can be very important pecan producers. Perhaps more important, native pecan forests are reservoirs of genetic diversity to overcome future disease and insect pests. Protection of native pecan trees at places like Four Rivers CA could be very important in the future to keep pecan trees and forests healthy.<br><br>
+
+PECAN MACROS<br>
+<i>Serving size is two handfuls</i><br>
+  <ul>
+    <li>718 calories</li>
+    <li>9.7g protein</li>
+    <li>2.4g fiber</li>
+    <li>74g Fat</li>
+  </ul>
+
+<h2>The Missouri Conservationist is a monthly mail-order magazine available free to Missourians. Out-of-state subscriptions are $7 and out-of-country subscriptions are $10 per year.  Click <a href="https://mdc.mo.gov/conmag">here</a> for more information and access to archived magazines.</h2>
+
+</mat-card-content>
+
+<mat-card-actions align="end">
+<button mat-button class="read-more" (click)="this.card.collapsed = !this.card.collapsed">Read {{ card.collapsed ? 'less &#x25b2;' : 'more &#x25bc;'}}</button>
+</mat-card-actions>
+
+</mat-card>

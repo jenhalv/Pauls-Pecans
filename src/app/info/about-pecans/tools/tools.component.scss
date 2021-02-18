@@ -11,9 +11,10 @@
 
 .mat-card-image {
   border-radius: 4px;
+  margin-top: -65px;
   mask-image: linear-gradient(to bottom, transparent 15%, black 55%);
  }
 
  .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
-  margin-bottom: -5px;
+  margin-bottom: -7px;
 }

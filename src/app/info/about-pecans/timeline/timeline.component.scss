@@ -5,7 +5,8 @@
 .mat-card {
   max-width: 375px;
   color: #58504e;
-  margin: 10px 7px;
+  // margin: 10px 7px;
+  margin: 40px auto;
 }
 
 .image-box {
@@ -126,7 +127,11 @@ h1 {
   }
 }
 
-
+@media screen and (max-width: 1036px) {
+.mat-card {
+  margin: 10px auto;
+}
+}
 
 
 //HEADER GRID

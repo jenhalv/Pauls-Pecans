@@ -44,7 +44,26 @@ a.active {
   cursor: context-menu;
 }
 
-.header {
+.home-page:hover {
+  background-color: #204638;
+  cursor: pointer;
+}
+
+a.home-page:focus {
+  background-color: #204638;
+  cursor: context-menu;
+}
+
+a.home-page {
+  background-color: #204638;
+  cursor: context-menu;
+}
+
+.home-page {
+  display: flex;
+}
+
+p {
   color: #ece4df;
   font-size: 30px;
   font-weight: 300;
@@ -86,7 +105,7 @@ mat-menu-content ng-tns-c83-0 {
   padding: 5px;
 }
 
-.home {
+.mat-icon {
   color: #ece4df;
   font-size: 35px;
   width: 30px;

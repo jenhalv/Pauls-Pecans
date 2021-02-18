@@ -67,6 +67,9 @@ import { ToolVideoComponent } from './videos/tool-video/tool-video.component';
 import { VideosComponent } from './videos/videos.component';
 import { ToolsComponent } from './info/about-pecans/tools/tools.component';
 import { ToolListComponent } from './info/about-pecans/tools/tool-list/tool-list.component';
+import { DashComponent } from './dash/dash.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MdcSiteComponent } from './info/about-pecans/featured-articles/mdc-site/mdc-site.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -119,7 +122,9 @@ const ANGULAR_MATERIAL_MODULES = [
     ImageGalleryComponent,
     ToolVideoComponent,
     ToolsComponent,
-    ToolListComponent
+    ToolListComponent,
+    DashComponent,
+    MdcSiteComponent
   ],
   imports: [
     BrowserModule,
@@ -135,7 +140,13 @@ const ANGULAR_MATERIAL_MODULES = [
     MatSidenavModule,
     YouTubePlayerModule,
     ClipboardModule,
-    ANGULAR_MATERIAL_MODULES
+    ANGULAR_MATERIAL_MODULES,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]
