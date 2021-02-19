@@ -31,10 +31,10 @@ const routes: Routes = [
     path: 'payment',
     component: PaymentComponent
   },
-  {
-    path: 'videos',
-    component: VideosComponent
-  },
+  // {
+  //   path: 'videos',
+  //   component: VideosComponent
+  // },
   {
     path: 'home',
     pathMatch : 'full',

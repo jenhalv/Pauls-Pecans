@@ -29,6 +29,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './home-page/header/header.component';
@@ -70,6 +71,8 @@ import { ToolListComponent } from './info/about-pecans/tools/tool-list/tool-list
 import { DashComponent } from './dash/dash.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MdcSiteComponent } from './info/about-pecans/featured-articles/mdc-site/mdc-site.component';
+import { CollectingGraftwoodComponent } from './info/about-pecans/collecting-graftwood/collecting-graftwood.component';
+import { GraftwoodVideoComponent } from './videos/graftwood-video/graftwood-video.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -85,7 +88,8 @@ const ANGULAR_MATERIAL_MODULES = [
   MatExpansionModule,
   MatTooltipModule,
   MatSnackBarModule,
-  MatDividerModule
+  MatDividerModule,
+  MatRadioModule
 ];
 
 @NgModule({
@@ -124,7 +128,9 @@ const ANGULAR_MATERIAL_MODULES = [
     ToolsComponent,
     ToolListComponent,
     DashComponent,
-    MdcSiteComponent
+    MdcSiteComponent,
+    CollectingGraftwoodComponent,
+    GraftwoodVideoComponent
   ],
   imports: [
     BrowserModule,

@@ -3,8 +3,30 @@
 
   <div class="page">
 
-   <app-tool-video></app-tool-video>
 
+<div class="card-container">
+      <mat-card *ngFor="let video of VIDEOS">
+
+          <mat-card-title>{{video.title}}</mat-card-title>
+
+          <mat-card-subtitle>Information:</mat-card-subtitle>
+            <mat-card-content [innerHTML]="video.information">{{video.information}}</mat-card-content>
+
+            <!-- <iframe [src]="video.videoId" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>{{video.videoId}}</iframe> -->
+
+      </mat-card>
+      </div>
+      <!-- <mat-card>
+          <div class="youtube">
+            <iframe src="https://www.youtube.com/embed/vdaT268gyrY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </mat-card>
+
+   <mat-card>
+    <div class="youtube">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_Ll0tfGIBwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</mat-card> -->
 
   </div>
 

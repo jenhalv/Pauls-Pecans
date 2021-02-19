@@ -6,7 +6,7 @@
   max-width: 375px;
   color: #58504e;
   // margin: 10px 7px;
-  margin: 40px auto;
+  margin: 40px 7px;
 }
 
 .image-box {
@@ -17,9 +17,8 @@
 }
 
 .mat-card-image:first-child {
-  margin: auto;
-  padding: 5px;
-  max-width: 293px;
+  max-width: 350px;
+  margin-bottom: 0px;
 }
 
 .StepProgress {
@@ -129,10 +128,9 @@ h1 {
 
 @media screen and (max-width: 1036px) {
 .mat-card {
-  margin: 10px auto;
+  margin-top: 10px;
 }
 }
-
 
 //HEADER GRID
 mat-card-title {
