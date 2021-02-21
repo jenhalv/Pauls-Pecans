@@ -71,8 +71,9 @@ import { ToolListComponent } from './info/about-pecans/tools/tool-list/tool-list
 import { DashComponent } from './dash/dash.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MdcSiteComponent } from './info/about-pecans/featured-articles/mdc-site/mdc-site.component';
-import { CollectingGraftwoodComponent } from './info/about-pecans/collecting-graftwood/collecting-graftwood.component';
-import { GraftwoodVideoComponent } from './videos/graftwood-video/graftwood-video.component';
+import { StoringGraftwoodVideoComponent } from './videos/storing-graftwood-video/storing-graftwood-video.component';
+import { GraftwoodComponent } from './info/about-pecans/graftwood/graftwood.component';
+import { CollectingGraftwoodVideoComponent } from './videos/collecting-graftwood-video/collecting-graftwood-video.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -129,8 +130,9 @@ const ANGULAR_MATERIAL_MODULES = [
     ToolListComponent,
     DashComponent,
     MdcSiteComponent,
-    CollectingGraftwoodComponent,
-    GraftwoodVideoComponent
+    StoringGraftwoodVideoComponent,
+    GraftwoodComponent,
+    CollectingGraftwoodVideoComponent
   ],
   imports: [
     BrowserModule,
