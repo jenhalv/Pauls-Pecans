@@ -1,28 +1,4 @@
 .card-container {
-  justify-content: center;
   column-gap: 25px;
-  display: flexbox;
-flex-direction: row;
-}
-
-.mat-card {
-  background: none;
-  box-shadow: none;
-  padding: 0px;
-}
-
-.rectangle {
-  height: 40px;
-  width: 190px;
-  background-color: red;
-  opacity: 0.9;
-  z-index: 1;
-  margin-top: 20px;
-  margin-left: 10px;
-  position: absolute;
-  border-radius: 8px;
-  transform: rotate(-15deg);
-  font-size: 25px;
-  text-align: center;
-  padding-top: 25px;
+  display: flex;
 }

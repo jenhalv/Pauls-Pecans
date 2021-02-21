@@ -1,0 +1,61 @@
+.card-container {
+  background-color: #58504e;
+  align-items: stretch;
+  text-align: left;
+  display: block;
+  max-width: 1300px;
+}
+
+.card-title {
+  margin-bottom: 0px;
+  padding: 10px 15px 0px 15px;
+  color: #ece4df;
+  text-align: left;
+}
+
+.graftwood-container {
+  display: flex;
+  column-gap: 5px;
+  padding: 0px 10px 25px 10px;
+}
+
+.mat-card {
+  max-width: 730px;
+  margin: 10px 5px 20px 5px;
+  color: #58504e;
+  background-color: #ece4df;
+  border: 6px #c7af93 solid;
+  border-radius: 0px;
+  box-shadow: 0px 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 1px rgba(0, 0, 0, 0.14), 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
+}
+
+.mat-card-content {
+  margin-bottom: 8px;
+  padding: 5px 0px;
+  text-align: left;
+}
+
+.mat-card-image {
+  opacity: 0;
+  margin-top: 20px;
+ }
+
+ @media screen and (max-width: 376px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+
+  @media screen and (max-width: 425px) {
+  ul {
+    padding-inline-start: 20px;
+  }
+  }
+
+  @media screen and (max-width: 885px) {
+  .graftwood-container {
+    display: block;
+  }
+}
+
+

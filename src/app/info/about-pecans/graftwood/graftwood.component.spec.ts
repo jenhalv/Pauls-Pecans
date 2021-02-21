@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GraftwoodVideoComponent } from './graftwood-video.component';
+import { GraftwoodComponent } from './graftwood.component';
 
-describe('GraftwoodVideoComponent', () => {
-  let component: GraftwoodVideoComponent;
-  let fixture: ComponentFixture<GraftwoodVideoComponent>;
+describe('GraftwoodComponent', () => {
+  let component: GraftwoodComponent;
+  let fixture: ComponentFixture<GraftwoodComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GraftwoodVideoComponent ]
+      declarations: [ GraftwoodComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GraftwoodVideoComponent);
+    fixture = TestBed.createComponent(GraftwoodComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
