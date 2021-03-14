@@ -2,3 +2,15 @@
   column-gap: 25px;
   display: flex;
 }
+
+mat-card {
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  box-shadow: none;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}

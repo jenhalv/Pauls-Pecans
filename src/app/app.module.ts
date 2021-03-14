@@ -74,6 +74,8 @@ import { MdcSiteComponent } from './info/about-pecans/featured-articles/mdc-site
 import { StoringGraftwoodVideoComponent } from './videos/storing-graftwood-video/storing-graftwood-video.component';
 import { GraftwoodComponent } from './info/about-pecans/graftwood/graftwood.component';
 import { CollectingGraftwoodVideoComponent } from './videos/collecting-graftwood-video/collecting-graftwood-video.component';
+import { PurposeComponent } from './info/about-pecans/purpose/purpose.component';
+import { PurposeVideoComponent } from './videos/purpose-video/purpose-video.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -132,7 +134,9 @@ const ANGULAR_MATERIAL_MODULES = [
     MdcSiteComponent,
     StoringGraftwoodVideoComponent,
     GraftwoodComponent,
-    CollectingGraftwoodVideoComponent
+    CollectingGraftwoodVideoComponent,
+    PurposeComponent,
+    PurposeVideoComponent,
   ],
   imports: [
     BrowserModule,

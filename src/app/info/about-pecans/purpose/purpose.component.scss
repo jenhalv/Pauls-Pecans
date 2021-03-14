@@ -1,0 +1,28 @@
+.h1 {
+  margin-bottom: 0px;
+  padding: 10px 15px 0px 15px;
+  color: #ece4df;
+  text-align: left;
+}
+
+.mat-card {
+  max-width: 600px;
+  margin: 10px auto;
+  color: #ece4df;
+  background-color: #58504e;
+  border: 4px #c7af93 solid;
+  border-radius: 0px;
+  padding: 16px 16px 0px 16px;
+}
+
+.mat-card-image {
+  opacity: 0;
+  margin-top: 10px;
+  padding-bottom: 10px
+ }
+
+ @media screen and (max-width: 376px) {
+  h1 {
+    font-size: 22px;
+  }
+}

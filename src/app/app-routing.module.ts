@@ -27,10 +27,10 @@ const routes: Routes = [
     path: 'contact',
     component: ContactComponent
   },
-    {
+  {
     path: 'payment',
     component: PaymentComponent
-  },
+    },
   // {
   //   path: 'videos',
   //   component: VideosComponent
