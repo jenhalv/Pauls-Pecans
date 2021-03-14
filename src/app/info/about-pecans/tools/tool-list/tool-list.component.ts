@@ -8,7 +8,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ToolListComponent implements OnInit {
 
-  value = 'Tools: Tool box, Pruners, Hammer, Flagging, Cloth ties, Pocket knife, Aluminum foil, Electrical tape, Masking tape, Rubber bands, Flair writing pen/Sharpie, Sandwich baggies, Bow saw/chainsaw, Cooler with ice pack, Eye glasses (if needed), Wood lathes, 1 ¼” nails, Graft wood, ⅝ x 18 wire nails (or equivalent)';
+  value = 'Tools: Tool box, Pruners, Hammer, Flagging, Cloth ties, Pocket knife, Aluminum foil, Electrical tape, Masking tape, Rubber bands, Flair writing pen/Sharpie, Sandwich baggies, Bow saw/chainsaw, Cooler with ice pack, Eye glasses (if needed), Wood lathes, 1 ¼” nails, Graftwood, ⅝ x 18 wire nails (or equivalent)';
 
   constructor(public snackBar: MatSnackBar) { }
 

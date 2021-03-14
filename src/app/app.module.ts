@@ -76,6 +76,8 @@ import { GraftwoodComponent } from './info/about-pecans/graftwood/graftwood.comp
 import { CollectingGraftwoodVideoComponent } from './videos/collecting-graftwood-video/collecting-graftwood-video.component';
 import { PurposeComponent } from './info/about-pecans/purpose/purpose.component';
 import { PurposeVideoComponent } from './videos/purpose-video/purpose-video.component';
+import { PruningComponent } from './info/about-pecans/pruning/pruning.component';
+import { PruningVideoComponent } from './videos/pruning-video/pruning-video.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -137,6 +139,8 @@ const ANGULAR_MATERIAL_MODULES = [
     CollectingGraftwoodVideoComponent,
     PurposeComponent,
     PurposeVideoComponent,
+    PruningComponent,
+    PruningVideoComponent,
   ],
   imports: [
     BrowserModule,

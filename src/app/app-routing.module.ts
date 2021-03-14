@@ -12,11 +12,11 @@ import { DashComponent } from './dash/dash.component';
 
 const routes: Routes = [
   {
-    path: 'about-pecans',
+    path: 'production',
     component: AboutPecansComponent
   },
   {
-    path: 'product',
+    path: 'pricing',
     component: ProductComponent
   },
   {

@@ -10,19 +10,19 @@ export class InfoComponent implements OnInit {
 
   CARDS = [
     {
-      title: 'About',
+      title: 'Production',
       image: 'assets/Images/tassels.jpg',
       imageAlt: 'pecan tassels on a tree',
       content: '"A society grows great when old men plant trees whose shade they know they shall never sit in." ~ Greek Proverb',
-      path: 'about-pecans',
+      path: 'production',
       label: 'click to learn more about grafting trees',
     },
     {
-      title: 'Product',
+      title: 'Pricing',
       image: 'assets/Images/tree.jpg',
       imageAlt: 'pecans in husk',
       content: 'We produce & sell quality organic fresh raw pecans grown on our responsibly-farmed orchard.',
-      path: 'product',
+      path: 'pricing',
       label: 'click to learn more about the pecans we sell',
     },
     {
