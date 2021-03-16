@@ -8,6 +8,18 @@
 
   .pecan-logo {
     margin: 0 -16px 0px -16px;
+    z-index: 1;
+  }
+
+  .logo {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 18vw;
+    height: auto;
+    margin: auto;
+    top: 55px;
+    left: 15px;
   }
 
 .card-container {
@@ -67,6 +79,41 @@ a {
     display: block;
     text-align: center;
   }
+}
+
+@media only screen and (max-width: 1000px) {
+  .logo {
+  max-width: 20vw;
+  top: 47px;
+}
+}
+@media only screen and (max-width: 900px) {
+  .logo {
+  max-width: 22vw;
+}
+}
+@media only screen and (max-width: 800px) {
+  .logo {
+  max-width: 26vw;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  .logo {
+  max-width: 28vw;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+  max-width: 32vw;
+  top: 40px;
+}
+}
+@media only screen and (max-width: 350px) {
+  .logo {
+    max-width: 30vw;
+    }
 }
 @media only screen and (max-width: 450px) {
   .narrow1 {

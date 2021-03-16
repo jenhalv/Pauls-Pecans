@@ -9,30 +9,40 @@
   "start_url": "/",
   "icons":[
     {
-      "src": "/assets/favicon/favicon-16x16.png",
+      "src": "/assets/favicon-16x16.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/assets/favicon/favicon-32x32.png",
+      "src": "/assets/favicon-32x32.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/assets/favicon/apple-touch-icon.png",
+      "src": "/assets/apple-touch-icon.png",
       "sizes": "152x152",
       "type": "image/png"
     },
     {
-      "src": "/assets/favicon/android-chrome-192x192.png",
+      "src": "/assets/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src":"/assets/favicon/android-chrome-512x512.png",
+      "src":"/assets/android-chrome-512x512.png",
       "sizes":"512x512",
       "type":"image/png"
-    }
-    ],
+    },
+    {
+              "src": "/android-chrome-192x192.png?v=dLXb8QPEv6",
+              "sizes": "192x192",
+              "type": "image/png"
+          },
+          {
+              "src": "/android-chrome-256x256.png?v=dLXb8QPEv6",
+              "sizes": "256x256",
+              "type": "image/png"
+          }
+      ],
     "splash_pages": null
   }
