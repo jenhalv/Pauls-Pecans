@@ -1,0 +1,34 @@
+.mat-card {
+    color: #58504e;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: auto;
+    background: transparent;
+    padding: 0px;
+    max-width: 450px;
+    text-align: center;
+}
+
+h1 {
+  margin-bottom: 4px;
+  color: #58504e;
+  text-align: left;
+}
+
+.mat-card-image {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.mat-card-image:first-child {
+  margin-top: 0px;
+}
+
+ mat-card-footer {
+  text-align: right;
+  font-size: 11px;
+  opacity: 60%;
+  margin: 0px;
+}

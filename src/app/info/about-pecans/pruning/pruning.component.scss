@@ -1,72 +1,57 @@
 .card-container {
-  align-items: stretch;
-  text-align: left;
   display: block;
   margin: 10px auto;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
+  max-width: 1100px;
 }
 
 h1 {
   margin-bottom: 0px;
-  padding: 0px;
+  padding: 10px 0px 0px 15px;
   color: #58504e;
-  text-align: left;
-  max-width: 350px;
 }
 
 .graftwood-container {
   display: flex;
-  padding: 0px 10px;
+  align-items: center;
+  padding: 10px 10px 0px 10px;
 }
 
 .mat-card {
     color: #58504e;
     border-radius: 0px;
     box-shadow: none;
-    margin: auto;
     background: transparent;
-    padding: 0px 10px;
+    max-width: 590px;
 }
 
-mat-card-content {
-  max-width: 350px;
-  font-size: 22px;
-  padding-top: 15px;
-  line-height: 23px;
-  padding: 10px 15px 0px 15px;
+button {
+  padding: 1px 6px;
+  cursor: pointer;
+  background-color: black;
+  line-height: 25px;
+  color: white;
 }
 
-.pop {
-  max-width: 350px;
-  margin: auto;
-  padding-left: 15px;
+.mat-card-content {
+  padding: 15px 0px 0px 0px;
 }
+
+mat-card-actions {
+  margin-right: 8px;
+}
+
 .line {
   opacity: 0;
  }
 
-mat-card-footer {
-  max-width: 600px;
-  display: flex;
-  font-size: 11px;
-  opacity: 60%;
-  margin: auto;
-  justify-content: flex-end;
-  padding-right: 3px;
-}
-
-@media screen and (max-width: 349px) {
-  .mat-card-image {
-    width: calc(70% + 32px);
-   }
-}
-
  @media screen and (max-width: 376px) {
   h1 {
     font-size: 22px;
-  }
-}
+    }
+ }
 
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 952px) {
   .graftwood-container {
     display: block;
   }

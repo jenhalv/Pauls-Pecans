@@ -78,6 +78,11 @@ import { PurposeComponent } from './info/about-pecans/purpose/purpose.component'
 import { PurposeVideoComponent } from './videos/purpose-video/purpose-video.component';
 import { PruningComponent } from './info/about-pecans/pruning/pruning.component';
 import { PruningVideoComponent } from './videos/pruning-video/pruning-video.component';
+import { PruningPhotoCardComponent } from './info/about-pecans/pruning/pruning-photo-card/pruning-photo-card.component';
+import { GraftingComponent } from './info/about-pecans/grafting/grafting.component';
+import { InlayGraftVideoComponent } from './videos/inlay-graft-video/inlay-graft-video.component';
+import { FourFlapGraftVideoComponent } from './videos/four-flap-graft-video/four-flap-graft-video.component';
+import { PruningPhotoCard1Component } from './info/about-pecans/pruning/pruning-photo-card1/pruning-photo-card1.component';
 
 const ANGULAR_MATERIAL_MODULES = [
   MatIconModule,
@@ -141,6 +146,11 @@ const ANGULAR_MATERIAL_MODULES = [
     PurposeVideoComponent,
     PruningComponent,
     PruningVideoComponent,
+    PruningPhotoCardComponent,
+    GraftingComponent,
+    InlayGraftVideoComponent,
+    FourFlapGraftVideoComponent,
+    PruningPhotoCard1Component,
   ],
   imports: [
     BrowserModule,

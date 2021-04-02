@@ -48,11 +48,6 @@ const routes: Routes = [
     path: 'dashboard',
     component: DashComponent
 }
-
-  // {
-  //   path: '',
-  //   component: HomePageComponent
-  // },
 ];
 
 @NgModule({
@@ -60,7 +55,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forRoot(routes, {
-      scrollPositionRestoration: 'enabled'
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
     })],
   exports: [RouterModule]
 })

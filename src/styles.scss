@@ -3,6 +3,10 @@
 // green #204638
 // dark brown #58504e
 
+html {
+  scroll-behavior: smooth;
+}
+
 .card-container {
   display: flex;
   margin: auto;

@@ -1,23 +1,46 @@
-.card-container {
+.tool-container {
   display: block;
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 20%);
+  padding: 10px;
+  max-width: 530px;
+  margin: auto;
+  border-radius: 0px;
+}
+
+h1 {
+  margin-bottom: 0px;
+  padding: 0px 0px 0px 5px;
+  color: #58504e;
 }
 
 .mat-card {
-  margin: 10px auto;
-  color: #58504e;
-  max-width: 600px;
-  padding: 16px 16px 0px 16px;
-  border: 4px transparent solid;
-  border-radius: 0px;
+ padding: 0px 16px;
+ background: transparent;
+ box-shadow: none;
 }
 
 .mat-card-image {
-  border-radius: 4px;
-  margin-top: -65px;
   mask-image: linear-gradient(to bottom, transparent 15%, black 55%);
+  margin: -260px -16px 0px -16px;
  }
 
- .mat-card>:last-child:not(.mat-card-footer), .mat-card-content>:last-child:not(.mat-card-footer) {
-  margin-bottom: -5px;
-  border-radius: 0px;
+button {
+  padding: 1px 6px;
+  cursor: pointer;
+  background-color: black;
+  line-height: 25px;
+  color: white;
+  z-index: 5;
+}
+
+mat-card-actions {
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .tool-container {
+margin: 30px auto;
+  }
 }

@@ -1,16 +1,38 @@
-.card-container {
+.click {
+  text-underline-position: under;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+}
+.info {
   display: block;
+}
+p:before {
+  content: '✓';
+  color: #888;
+  padding-right: 5px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+  word-spacing: 1px;
+  color: #888;
 }
 
 .mat-card {
-  max-width: 375px;
+  max-width: 1075px;
   color: #58504e;
   margin: 40px 7px;
   border-radius: 0px;
 }
 
 .mat-card-image {
-  width: calc(90% + 32px);
+  width: 270px;
+  margin: 0px 5px -5px 5px;
 }
 
 mat-card-footer {
@@ -21,6 +43,14 @@ mat-card-footer {
   margin: auto;
   justify-content: flex-end;
   padding-right: 3px;
+}
+
+button {
+  padding: 1px 6px;
+  cursor: pointer;
+  background-color: black;
+  line-height: 25px;
+  color: white;
 }
 
 .StepProgress {
@@ -35,10 +65,12 @@ mat-card-footer {
   left: 15px;
   height: 100%;
   border-left: 2px solid #CCC;
+  top: 5px;
 }
 
 .StepProgress-item {
 position: relative;
+column-count: 2;
 }
 
 .StepProgress-item:not(:last-child) {
@@ -49,20 +81,22 @@ padding-bottom: 20px;
 content: '';
 position: absolute;
 left: -30px;
-height: 103%;
+height: 102%;
 width: 10px;
+top: 5px;
 }
 
 .StepProgress-item::after {
 content: '';
 position: absolute;
-top: 0;
+top: 0px;
 left: -37px;
 width: 12px;
 height: 12px;
 border: 2px solid #CCC;
 border-radius: 50%;
 background-color: #FFF;
+margin-top: 5px;
 }
 
 //line @current month
@@ -76,6 +110,10 @@ background-color: #FFF;
   border: 2px solid #58504e;
 }
 
+.StepProgress-item.no-pic {
+column-count: 1;
+}
+
 // TIMELINE
 
 h1 {
@@ -86,46 +124,19 @@ h1 {
   overflow: hidden;
 }
 
-.timeline-content {
-  color: #58504e;
-}
-
-.timeline-content h3 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 22px;
+h3 {
+  font-size: 20px;
   font-weight: 500;
 }
 
-.timeline-content span {
-  font-size: 15px;
-  color: #a4a4a4;
+.timeline-content {
+  column-count: 1;
 }
 
-.timeline-content p {
-  font-size: 14px;
-  line-height: 1.5em;
-  word-spacing: 1px;
-  color: #888;
-}
-
-@media screen and (max-width: 768px) {
-  .container:before {
-     left: 8px;
-     width: 2px;
-  }
-  .timeline-block {
-     width: 100%;
-     margin-bottom: 20px;
-  }
-  .timeline-block-right {
-     float: none;
-  }
-
-  .timeline-block-left {
-     float: none;
-     direction: ltr;
-  }
+@media screen and (max-width: 625px) {
+  .StepProgress-item {
+    column-count: 1;
+    }
 }
 
 @media screen and (max-width: 1036px) {

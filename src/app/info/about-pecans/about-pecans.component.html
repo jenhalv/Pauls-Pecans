@@ -1,19 +1,58 @@
 <div class="page">
+    <!-- <p style.color = "{{result > 30 ? 'blue' : 'green'}}"> Hello Color World! </p>
+
+    <div [ngStyle]="{'color': false ? 'green' : 'red' }">This is condition.</div>
+    <div [ngStyle]="{'today': false ? 'green' : 'red' }">Date?</div> -->
 
 <div class="card-container">
+    <div class="jump" id="top"></div>
 
-  <app-timeline></app-timeline>
+    <!-- <div class="table-of-contents">
+        <h1>To learn more about the grafting process, jump to our Pecan Producers Contents:</h1>
 
-  <mat-card>
-  <app-purpose></app-purpose>
+    <ul>
+        <li (click)="onClickScroll('timeline')">Timeline</li>
 
-  <app-tools></app-tools>
-</mat-card>
+        <li (click)="onClickScroll('purpose')">Purpose of Grafting</li>
 
-  <app-graftwood></app-graftwood>
+        <li (click)="onClickScroll('tools')">Grafting Tools</li>
 
-  <!-- <app-featured-articles></app-featured-articles> -->
-<!-- <app-pruning></app-pruning> -->
+        <li (click)="onClickScroll('collecting-graftwood')">Collecting Graftwood</li>
+
+        <li (click)="onClickScroll('storing-graftwood')">Storing Graftwood</li>
+
+        <li (click)="onClickScroll('pruning')">Pruning</li>
+
+        <li (click)="onClickScroll('inlay')">Inlay Grafting</li>
+
+        <li (click)="onClickScroll('four')">Four-Flap Grafting</li>
+
+        <li (click)="onClickScroll('resources')">Coming Soon - Resources</li>
+
+    </ul>
+
+    </div> -->
+
+  <div class="top-container">
+      <app-timeline></app-timeline>
+
+      <!-- <div class="side-container">
+        <div class="jump" id="purpose"></div>
+        <app-purpose ></app-purpose>
+
+        <div class="jump" id="tools"></div>
+        <app-tools></app-tools>
+      </div> -->
+
+  </div>
+
+  <app-graftwood ></app-graftwood>
+
+  <div class="jump" id="pruning">
+  <app-pruning></app-pruning></div>
+
+  <app-grafting></app-grafting>
+
+<!-- <app-featured-articles id="resources"></app-featured-articles> -->
 </div>
-
 </div>

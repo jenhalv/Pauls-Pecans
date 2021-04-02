@@ -1,17 +1,89 @@
 .card-container {
-  column-gap: 25px;
-  display: flex;
-  max-width: 1400px;
+  max-width: 1350px;
+  align-items: stretch;
 }
 
+.table-of-contents {
+  max-width: 1050px;
+  margin: auto;
+  color: #58504e;
+  padding: 10px;
+  position: relative;
+}
+
+// .mat-card-image {
+//   width: 100%;
+//   max-width: 1050px;
+//   margin: -300px 0px 20px 0px;
+//   mask-image: linear-gradient(to bottom, transparent 15%, black 55%);
+//  }
+
+.top-container {
+  display: flex;
+  column-gap: 25px;
+  margin: auto;
+}
+
+.side-container {
+  margin: auto;
+}
+
+li {
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+ul {
+  columns: 2;
+  column-gap: 30px;
+  margin-inline-start: 45px;
+}
+
+p {
+  color: red;
+  font-size: 11px;
+}
 mat-card {
   background-color: transparent;
   padding: 0px;
   margin: 0px;
   border: 0px;
   box-shadow: none;
+  row-gap: 75px;
 }
 
 .mat-card:not([class*=mat-elevation-z]) {
   box-shadow: none;
+}
+
+.jump {
+  margin-top: -50px;
+  padding-top: 60px;
+}
+
+button {
+  padding: 1px 6px;
+  cursor: pointer;
+  background-color: black;
+  line-height: 25px;
+  color: white;
+}
+
+@media screen and (max-width: 497px) {
+  ul {
+    columns: 1;
+    margin-inline-start: 0px;
+  }
+  .card-container {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 885px) {
+.top-container {
+  display: block;
+}
 }

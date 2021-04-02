@@ -1,5 +1,6 @@
 <div class="card-container">
 
+    <div class="jump" id="timeline"></div>
 <mat-card>
 
   <h1>Pecan Producers <b>timeline</b></h1>
@@ -7,65 +8,54 @@
     <ul class="StepProgress">
 
            <li class="StepProgress-item current">
-               <div class="timeline-content">
                 <h3>January - March</h3>
-                <p>Dormant<br>
-                 Prune/thin branches<br>
-                 Collect scionwood/graftwood<br>
-                 Pick late fallen pecans</p>
+                    <p>Pick late fallen pecans</p>
+                    <p class="click"(click)="onClickScroll('pruning')"><u>Prune/thin branches</u></p>
+                    <p class="click" (click)="onClickScroll('collecting-graftwood')"><u>Collect & store graftwood</u></p>
                  <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/paulspecans.appspot.com/o/Website%20Images%2Ftree_winter.jpg?alt=media&token=915b1def-6119-40a6-a204-b18c5e47e006" alt="Snow on the pecan grove"/>
                  <mat-card-footer>Pecan Grove ~ Winter</mat-card-footer>
 
-             </div>
            </li>
 
-           <li class="StepProgress-item">
-            <div class="timeline-content">
+           <li class="StepProgress-item current">
               <h3>April</h3>
-              <p>Budbreak<br>
-              Grafting Window</p>
-            </div>
+              <p>Budbreak</p>
+              <p class="click" (click)="onClickScroll('graft')"><u>Grafting Window</u></p>
+              <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/paulspecans.appspot.com/o/Website%20Images%2Ftree_april.jpg?alt=media&token=99ab6ec6-1ae1-4439-bcc2-d87035001a42" alt="Budbreak on the pecan grove"/>
+              <mat-card-footer>Pecan Grove ~ Budbreak</mat-card-footer>
            </li>
 
           <li class="StepProgress-item">
-              <div class="timeline-content">
                   <h3>May</h3>
                   <p>Pollination</p>
                   <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/paulspecans.appspot.com/o/Website%20Images%2Ftree_spring.jpg?alt=media&token=5cc09f32-ec17-4122-9ca8-21bb0a80cedb" alt="Spring in the pecan grove"/>
                   <mat-card-footer>Pecan Grove ~ Spring</mat-card-footer>
+          </li>
 
-
-               </div>
+          <li class="StepProgress-item no-pic">
+            <h3>June - August</h3>
+            <p>Nut elongation and expansion</p>
           </li>
 
           <li class="StepProgress-item">
-              <div class="timeline-content">
-                  <h3>June - August</h3>
-                  <p>Nut elongation and expansion</p>
-               </div>
+            <h3>September - October</h3>
+              <p>Shell Hardening</p>
+              <p>Kernel Development</p>
+              <p> Shucks Split</p>
+                <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/paulspecans.appspot.com/o/Website%20Images%2Ftree_fall.jpg?alt=media&token=bec34962-3ed6-4e2e-9dfe-9466cc9e953d" alt="Fall on the pecan grove"/>
+              <mat-card-footer>Pecan Grove ~ Fall</mat-card-footer>
           </li>
 
-          <li class="StepProgress-item">
-              <div class="timeline-content">
-                  <h3>September - October</h3>
-                  <p>Shell Hardening<br>
-                   Kernel Development<br>
-                   Shucks Split</p>
-                   <img mat-card-image src="https://firebasestorage.googleapis.com/v0/b/paulspecans.appspot.com/o/Website%20Images%2Ftree_fall.jpg?alt=media&token=bec34962-3ed6-4e2e-9dfe-9466cc9e953d" alt="Fall on the pecan grove"/>
-                   <mat-card-footer>Pecan Grove ~ Fall</mat-card-footer>
-
-               </div>
-          </li>
-
-          <li class="StepProgress-item">
-              <div class="timeline-content">
-                  <h3>November - December</h3>
-                  <p>HARVEST TIME!</p>
-               </div>
+          <li class="StepProgress-item no-pic">
+              <h3>November - December</h3>
+              <p>HARVEST TIME!</p>
           </li>
 
        </ul>
 
+       <mat-card-actions align="end">
+          <button mat-button (click)="onClickScroll('top')">Back to Top</button>
+        </mat-card-actions>
 
       </mat-card>
 
